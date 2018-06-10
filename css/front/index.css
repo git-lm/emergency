@@ -1,7 +1,7 @@
 body{
     text-align: center;
     font-size: 18px;
-    color: #fff;
+    /*    color: #fff;*/
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -46,6 +46,7 @@ body{
     height: auto;
     width: 95%;
     margin: 3% auto;
+    padding-bottom: 15%;
 }
 
 .top_nav .dp{
@@ -62,7 +63,7 @@ body{
 }
 
 .lct{
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 8%;
 }
 
@@ -349,7 +350,7 @@ body{
 .show_chats{
     width: 75%;
     overflow-y: auto;
-    border:1px solid #eee;
+    /*    border:1px solid #eee;*/
     float: right;
     padding: 1%;
 }
@@ -466,6 +467,7 @@ body{
     display: inline-block;
     width: 50%;
     float: left;
+    font-size: 38px;
 }
 
 .c_top_teacher{
@@ -563,6 +565,10 @@ body{
     text-align: center;
 }
 
+.showIndexes li{
+    width: 100%!important;
+}
+
 .four li{
     width:25%;
 }
@@ -644,7 +650,7 @@ body{
 }
 
 .show_list .list{
-    display: none;
+    /*    display: none;*/
 }
 
 .show_list .list:nth-child(1),.show_list .list:nth-child(2),.show_list .list:nth-child(3){
@@ -686,4 +692,10 @@ body{
 
 .p_more{
     margin-top: 2%;
+}
+.showEvent li, .showGroup li{
+    width: 50%;
+}
+.showEventGroup li{
+    width: 100%;
 }

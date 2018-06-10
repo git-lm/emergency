@@ -11,7 +11,7 @@
         <script type="text/javascript" src="{base}js/jquery.min.js"></script>
         <script type="text/javascript" src="{base}js/front/index.js"></script>
         <script src="{base}js/plugins/layer/layer.min.js"></script>
-        <script type="text/javascript" src="{base}js/front/teacher.js"></script>
+
 
         <script>
             var base ='{base}';
@@ -23,7 +23,7 @@
             <div class="nav">
                 <div class="top_nav">
                     <img src="" alt="" class="header" /><a class="dp"></a><br />
-                    <span class="time">0</span>
+                    <span class="timing">0</span>
                 </div>
 
 
@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!--弹出层  素材分发-->
         <div class="show_Ceng" style="display:none;">
             <div class="ceng"></div>
@@ -212,36 +212,10 @@
             </div>
         </div>
 
-        <!--弹出层  点击事件注入页面-->
-        <div class="show_Ceng" style="display:none;">
-            <div class="ceng"></div>
-            <div class="show_box show_box_number">
-          <!--     <p class="dq_idea">事件叠加<span class="close">x</span></p>
-                -->  	
-                <div class="right2">
-                    <div class="show_chats show_chats_pl">
-                        <ol class="ol_one there">
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                        </ol>
 
-                        <p class="choose">选择租</p>
-                        <ol class="ol_one four">
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                            <li>群发突发事件</li>
-                        </ol>
-                        <!-- 
-                                <input type="button" value="注入"  class="btn" /> -->
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <!--弹出层  点击事件注入页面-->
+        
 
         <!--弹出层  资源展示区-->
         <div class="show_Ceng" style="display:none;">
@@ -269,6 +243,8 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" src="{base}js/front/teacher.js"></script>
 
     </body>
 </html>
