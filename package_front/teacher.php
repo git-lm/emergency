@@ -38,7 +38,7 @@
                         <li class="event">事件叠加</li>
                         <li class="problem">问题分发</li>
                         <li class="material">素材分发</li>
-                        <li class="evaluate">教学评估</li>
+                        <li class="assess">教学评估</li>
 
                     </ul>
                 </div>
@@ -182,6 +182,7 @@
                 </div>
             </div>
         </div>
+        
 
 
         <!--弹出层  点击问题分发页面-->
@@ -215,7 +216,7 @@
 
 
         <!--弹出层  点击事件注入页面-->
-        
+
 
         <!--弹出层  资源展示区-->
         <div class="show_Ceng" style="display:none;">

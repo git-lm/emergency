@@ -696,6 +696,9 @@ body{
 .showEvent li, .showGroup li{
     width: 50%;
 }
-.showEventGroup li{
+.showblock li{
     width: 100%;
+}
+.cur{
+    color:red;
 }

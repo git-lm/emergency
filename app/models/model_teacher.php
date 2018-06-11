@@ -191,11 +191,12 @@ class model_teacher extends CI_Model {
      * 小组 事件注入
      * c_id 课程ID
      * e_id 事件ID
-     * g_id
+     * g_id 小组
+     * prd_id 流程ID
      */
 
-    public function setEventGroup($c_id = 0, $e_id = 0, $g_id = 0) {
-        $sql = 'insert into record_events (c_id , e_id , g_id , add_time) values(' . $c_id . ' , ' . $e_id . ' , ' . $g_id . ' , "' . date('Y-m-d H:i:s') . '")';
+    public function setEventGroup($c_id = 0, $prd_id = 0, $e_id = 0, $g_id = 0) {
+        $sql = 'insert into record_events (c_id , prd_id , e_id , g_id , add_time) values(' . $c_id . ', ' . $prd_id . ' , ' . $e_id . ' , ' . $g_id . ' , "' . date('Y-m-d H:i:s') . '")';
         $this->db->query($sql);
         $rows = $this->db->affected_rows();
         if ($rows == 0) {
@@ -212,8 +213,8 @@ class model_teacher extends CI_Model {
      * g_id 小组
      */
 
-    public function getEventGroup($arr) {
-        $record_events = $this->db->get_where('record_events', $arr)->result();
+    public function getEventGroup($param) {
+        $record_events = $this->db->get_where('record_events', $param)->result();
         return $record_events;
     }
 
@@ -237,6 +238,156 @@ class model_teacher extends CI_Model {
         $sql = 'select * from events where id = ' . $id;
         $event = $this->db->query($sql)->row();
         return $event;
+    }
+
+    /*
+     * 获取小组事件列表
+     * param 查询条件
+     * c_id  课程ID
+     * g_id  小组ID
+     */
+
+    public function getGroupEvents($param = null) {
+        $where = '';
+        if (!empty($param) && is_array($param)) {
+            $where = 'where  1 = 1 ';
+            if (!empty($param['c_id'])) {
+                $where .= ' and re.c_id = ' . $param['c_id'];
+            }
+            if (!empty($param['g_id'])) {
+                $where .= ' and re.g_id = ' . $param['g_id'];
+            }
+            if (!empty($param['prd_id'])) {
+                $where .= ' and re.prd_id = ' . $param['prd_id'];
+            }
+        }
+
+        $sql = 'select e.* from record_events re left join events e on e.id = re.e_id ' . $where;
+        $events = $this->db->query($sql)->result();
+        return $events;
+    }
+
+    /*
+     * 获取小组问题
+     * param  查询信息
+     * g_id 小组ID
+     * pb_id 问题ID
+     */
+
+    public function getGroupProblem($param) {
+        $record_problems = $this->db->get_where('record_problems', $param)->result();
+        return $record_problems;
+    }
+
+    /*
+     * 添加小组问题 
+     * c_id  课程ID
+     * g_id  小组ID
+     * pd_id 问题ID
+     * prd_id 流程ID
+     */
+
+    public function setGroupProblem($c_id = 0, $prd_id = 0, $g_id = 0, $pb_id = 0) {
+        $sql = 'insert into record_problems (c_id , prd_id ,g_id ,pb_id ,add_time ) values (' . $c_id . ', ' . $prd_id . ',' . $g_id . ',' . $pb_id . ',"' . date('Y-m-d H:i:s') . '")';
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /*
+     * 获取课程素材
+     * param 查询条件
+     * c_id 课程ID
+     */
+
+    public function getCourseMaterial($param = null) {
+        $record_problems = $this->db->get_where('materials', $param)->result();
+        return $record_problems;
+    }
+
+    /*
+     * 获取小组素材
+     *  param  查询信息
+     * c_id 课程ID 
+     * g_id 小组ID
+     * m_id 素材ID
+     */
+
+    public function getGroupMaterials($param) {
+        $record_materials = $this->db->get_where('record_materials', $param)->result();
+        return $record_materials;
+    }
+
+    /*
+     * 添加小组素材
+     * c_id 课程ID 
+     * g_id 小组ID
+     * m_id 素材ID
+     * prd_id 流程ID
+     */
+
+    public function setGroupMaterial($c_id = 0, $prd_id, $g_id = 0, $m_id = 0) {
+        $sql = 'insert into record_materials (c_id , prd_id , g_id ,m_id ,add_time ) values (' . $c_id . ', ' . $prd_id . ',' . $g_id . ',' . $m_id . ',"' . date('Y-m-d H:i:s') . '")';
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /*
+     * 获取评估内容
+     * param
+     * c_id 课程ID
+     * p_id 流程ID
+     */
+
+    public function getProcesslAssess($param) {
+        $assess = $this->db->get_where('assess', $param)->result();
+        return $assess;
+    }
+
+    /*
+     * 添加课程流程评估内容
+     * c_id 课程ID
+     * p_id 流程ID
+     * content 评估内容
+     */
+
+    public function setProcesslAssess($c_id = 0, $p_id = 0, $content) {
+
+        $sql = 'insert into assess (c_id , p_id , content ,add_time ) values (' . $c_id . ', ' . $p_id . ',"' . $content . '","' . date('Y-m-d H:i:s') . '")';
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /*
+     * 更新课程流程评估内容
+     * c_id 课程ID
+     * p_id 流程ID
+     * content 评估内容
+     */
+
+    public function updateProcesslAssess($c_id = 0, $p_id = 0, $content) {
+        $sql = 'update assess set content = "' . $content . '" where c_id = ' . $c_id . ' and p_id = ' . $p_id;
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 }

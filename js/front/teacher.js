@@ -77,7 +77,7 @@ $(function(){
                 if(data.state=='ok'){
                     var visesHeight = $('.vises').height();
                     var visesWidth = $('.vises').width();
-                    $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
+                //                    $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
                 }
             },'json')
         }else{
@@ -94,7 +94,10 @@ $(function(){
     
     
     /*************************************分隔符   上部分刷新获取  下部分事件获取**********************************************************/   
-    
+    $('.procedureMenu li').click(function(){
+        $('.procedureMenu li').removeClass('cur');
+        $(this).addClass('cur');
+    })
     
     //开始教学流程
     $('.procedure').on('click','li',function(){
@@ -175,7 +178,7 @@ $(function(){
                                         layer.closeAll();
                                         var visesHeight = $('.vises').height();
                                         var visesWidth = $('.vises').width();
-                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
+                                    //                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
                                    
                                     }else{
                                         layer.closeAll();
@@ -249,7 +252,7 @@ $(function(){
                 +groupHtml
                 +'</ol>'
                 +'<p class="choose">小组情况</p>'
-                +'<ol class="ol_one four showEventGroup">'
+                +'<ol class="ol_one four showEventGroup showblock">'
                 +data.eventgroup
                 +'</ol>'
                 +'</div>'
@@ -313,8 +316,6 @@ $(function(){
         }else{
             $(this).addClass('cur');
         }
-       
-       
     })
     //事件叠加  选择组
     $(document).on('click','.showGroup li',function(){
@@ -324,6 +325,285 @@ $(function(){
             $(this).addClass('cur');
         }
     })
+    
+    
+    //问题分发
+    $('.problem').click(function(){
+        var prd_id = $('.purple').attr('itemid');
+        
+        $.post(base + 'teacher/getProcessCourseGroup',function(data){
+            var groupHtml = '';
+            for(var i=0; i<data.length;i++){
+                groupHtml +='<li itemid="'+data[i].id+'">'+data[i].name+'</li>';
+            }
+            var html = '<div class="show_Ceng">'
+            +'<div class="ceng"></div>'
+            +'<div class="show_box show_box_number">'
+            +'<div class="right2">'
+            +'<div class="show_chats show_chats_pl">'
+            +'<p class="choose">选择租</p>'
+            +'<ol class="ol_one four showProblemGroup">'
+            +groupHtml
+            +'</ol>'
+            +'<p class="choose">问题选择</p>'
+            +'<ol class="ol_one four showProblem showblock">'
+            
+            +'</ol>'
+            +'</div>'
+            +'</div>'
+            +'</div>'
+            +'</div>';
+            layer.open({
+                title:'问题分发',
+                type: 1,
+                area: ['500px','500px'], //宽高
+                closeBtn :1,
+                content: html,
+                btn: ['分发', '取消'],
+                yes:function(index, layero){
+                    var problem = new Array();
+                    var g_id =  $('.showProblemGroup .cur').attr('itemid');
+                   
+                    $('.showProblem .cur').each(function(){
+                        problem.push($(this).attr('itemid'));
+                    })
+                        
+                    if(g_id == undefined){
+                        layer.msg('请选择小组');
+                        return;
+                    }
+                    if(!$.isArray(problem) || problem.length == 0){
+                        layer.msg('请选择分发的事件');
+                        return;
+                    }
+                   
+                    $.post(base + 'teacher/setGroupProblem',{
+                        'problem':problem,
+                        'g_id':g_id
+                    },function(data){
+                        if(data.state =='ok'){
+                            layer.closeAll();
+                            layer.msg(data.msg);
+                        }else{
+                            layer.closeAll();
+                            layer.msg(data.msg);
+                        }
+                    },'json')
+                        
+                }
+            });
+        },'json')
+        
+       
+    })
+    
+    //获取小组已经注入的事件
+    $(document).on('click','.showProblemGroup li',function(){
+        $('.showProblemGroup li').removeClass('cur');
+        $(this).addClass('cur');
+        var g_id = $(this).attr('itemid');
+        if(g_id == undefined || g_id == ''){
+            return;
+        }
+        $.post(base + 'teacher/getGroupEvents',{
+            'g_id':g_id
+        },function(data){
+            if(data.state == 'ok'){
+                var events = data.msg;
+                var eventHtml = '';
+                for(var i=0; i<events.length;i++){
+                    eventHtml +='<li itemid="'+events[i].id+'">'+events[i].title+'</li>';
+                }
+                $('.showProblem').html(eventHtml);
+            }else{
+                layer.msg(data.msg);
+            }
+        },'json')
+    })
+    
+    
+    //注入事件
+    $(document).on('click','.showProblem li',function(){
+        if($(this).hasClass('cur')){
+            $(this).removeClass('cur');
+        }else{
+            $(this).addClass('cur');
+        }
+    })
+    
+    
+    //问题分发
+    $('.material').click(function(){
+        var prd_id = $('.purple').attr('itemid');
+        
+        $.post(base + 'teacher/getProcessCourseGroup',function(data){
+            var groupHtml = '';
+            for(var i=0; i<data.length;i++){
+                groupHtml +='<li itemid="'+data[i].id+'">'+data[i].name+'</li>';
+            }
+            var html = '<div class="show_Ceng">'
+            +'<div class="ceng"></div>'
+            +'<div class="show_box show_box_number">'
+            +'<div class="right2">'
+            +'<div class="show_chats show_chats_pl">'
+            +'<p class="choose">选择组</p>'
+            +'<ol class="ol_one four showMaterialGroup">'
+            +groupHtml
+            +'</ol>'
+            +'<p class="choose">素材类型</p>'
+            +'<ol class="ol_one five showMaterialType">'
+            +'<li itemtype="3">ppt</li>'
+            +'<li itemtype="1">视频</li>'
+            +'<li itemtype="4">文档</li>'
+            +'<li itemtype="2">图片</li>'
+            +'<li itemtype="5">其它素材</li>'
+            +'</ol>'
+            +'<p class="choose">选择素材区</p>'
+            +'<ol class="ol_one four showMaterial">'
+           
+            +'</ol>'
+            
+            +'</div>'
+            +'</div>'
+            +'</div>'
+            +'</div>';
+            layer.open({
+                title:'素材分发',
+                type: 1,
+                area: ['500px','500px'], //宽高
+                closeBtn :1,
+                content: html,
+                btn: ['分发', '取消'],
+                yes:function(index, layero){
+                   
+                    var g_id =  $('.showMaterialGroup .cur').attr('itemid');
+                    var m_id =  $('.showMaterial .cur').attr('itemid');
+                    var type =  $('.showMaterialType .cur').attr('itemtype');
+                        
+                    if(g_id == undefined){
+                        layer.msg('请选择小组');
+                        return;
+                    }
+                    if(type == undefined){
+                        layer.msg('请选择素材类型');
+                        return;
+                    }
+                    if(m_id == undefined){
+                        layer.msg('请选择素材');
+                        return;
+                    }
+                    $.post(base + 'teacher/setGroupMaterial',{
+                        'type':type,
+                        'g_id':g_id,
+                        'm_id':m_id
+                    },function(data){
+                        if(data.state =='ok'){
+                            layer.closeAll();
+                            layer.msg(data.msg);
+                        }else{
+                            layer.closeAll();
+                            layer.msg(data.msg);
+                        }
+                    },'json')
+                        
+                }
+            });
+        },'json')
+    })
+    
+    //素材分发  选择小组
+    $(document).on('click','.showMaterialGroup li',function(){
+        $('.showMaterialGroup li').removeClass('cur');
+        $(this).addClass('cur');
+    })
+    //素材分发  选择素材类型
+    $(document).on('click','.showMaterialType li',function(){
+        $('.showMaterialType li').removeClass('cur');
+        $(this).addClass('cur');
+        
+        
+        var g_id =  $('.showMaterialGroup .cur').attr('itemid');
+        var type =  $('.showMaterialType .cur').attr('itemtype');
+        if(g_id =='' || g_id == undefined){
+            layer.msg('请选择小组');
+            $(this).removeClass('cur');
+            return;
+        }
+        if(type =='' || type == undefined){
+            return;
+        }
+        $.post(base +'teacher/getCourseMaterial',{
+            'type':type
+        },function(data){
+            if(data.state == 'ok'){
+                var material = data.msg;
+                var materialHtml = '';
+                for(var i=0; i<material.length;i++){
+                    materialHtml +='<li itemid="'+material[i].id+'">'+material[i].name+'</li>';
+                }
+                $('.showMaterial').html(materialHtml);
+            }else{
+                layer.msg(data.msg);
+            }
+        },'json')
+            
+            
+       
+    })
+    //素材分发  选择素材
+    $(document).on('click','.showMaterial li',function(){
+        if($(this).hasClass('cur')){
+            $(this).removeClass('cur');
+        }else{
+            $(this).addClass('cur');
+        }
+    })
+    
+    //教学评估
+    $('.assess').click(function(){
+        var html ='<div class="show_Ceng" >'
+        +'<div class="ceng"></div>'
+        +'<div class="show_box show_box_number">'
+        +'<div class="right2">'
+        +'<div class="show_chats show_chats_pl">'
+        +'<textarea name="assess"></textarea>'
+        +'</div>'
+        +'</div>'
+        +'</div>'
+        +'</div>'
+        layer.open({
+            title:'教学评估',
+            type: 1,
+            area: ['500px','500px'], //宽高
+            closeBtn :1,
+            content: html,
+            btn: ['确认', '取消'],
+            yes:function(index, layero){
+                   
+                var assess =  $('textarea[name="assess"]').val();
+                
+                        
+                if(assess == undefined || assess ==''){
+                    layer.msg('请填写评估内容');
+                    return;
+                }
+                
+                $.post(base + 'teacher/setProcesslAssess',{
+                    'assess':assess
+                },function(data){
+                    if(data.state =='ok'){
+                        layer.closeAll();
+                        layer.msg(data.msg);
+                    }else{
+                        layer.closeAll();
+                        layer.msg(data.msg);
+                    }
+                },'json')
+                        
+            }
+        });
+    })
+    
     
     
 })

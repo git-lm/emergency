@@ -282,15 +282,18 @@ class Teacher extends CI_Controller {
                 if (!empty($groups)) {
                     //获取课程事件
                     $events = $this->model_teacher->getEvents($procedures->c_id);
+                    $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+                    $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
                     //获取课程所有事件小组分配情况
                     $item['c_id'] = $procedures->c_id;
+                    $item['prd_id'] = $processProcedures->prd_id;
                     $record_events = $this->model_teacher->getEventGroup($item);
                     $eventGroupHtml = '';
                     foreach ($record_events as $key => $val) {
                         $group = $this->model_teacher->getGroup($val->g_id);
                         $event = $this->model_teacher->getEvent($val->e_id);
 
-                        $eventGroupHtml .= '<li>' .  $event->title  . ':' .$group->name . '</li>';
+                        $eventGroupHtml .= '<li>' . $event->title . ':' . $group->name . '</li>';
                     }
 
 
@@ -328,16 +331,17 @@ class Teacher extends CI_Controller {
         if (!empty($_POST['event']) && !empty($_POST['group'])) {
             $this->db->trans_begin();
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
             for ($i = 0; $i < count($_POST['event']); $i++) {
                 for ($j = 0; $j < count($_POST['group']); $j++) {
                     //注入小组事件
                     $item['c_id'] = $processCourse->id;
                     $item['e_id'] = $_POST['event'][$i];
                     $item['g_id'] = $_POST['group'][$j];
-
+                    $item['prd_id'] = $processProcedures->prd_id;
                     $record_events = $this->model_teacher->getEventGroup($item);
                     if (empty($record_events)) {
-                        $req = $this->model_teacher->setEventGroup($processCourse->id, $_POST['event'][$i], $_POST['group'][$j]);
+                        $req = $this->model_teacher->setEventGroup($processCourse->id, $processProcedures->prd_id, $_POST['event'][$i], $_POST['group'][$j]);
                     }
                 }
             }
@@ -352,6 +356,149 @@ class Teacher extends CI_Controller {
         } else {
             $resjson['state'] = 'no';
             $resjson['msg'] = '注入失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 获取小组已经注入的小组事件
+     * g_id  小组ID
+     */
+
+    public function getGroupEvents() {
+        if (!empty($_POST['g_id'])) {
+            $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $item['c_id'] = $processCourse->id;
+            $item['g_id'] = $_POST['g_id'];
+            $item['prd_id'] = $processProcedures->prd_id;
+            $events = $this->model_teacher->getGroupEvents($item);
+            $resjson['state'] = 'ok';
+            $resjson['msg'] = $events;
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '获取失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 问题分发
+     * problem 问题数组
+     * g_id 小组
+     */
+
+    public function setGroupProblem() {
+        if (!empty($_POST['problem']) && !empty($_POST['g_id'])) {
+            $this->db->trans_begin();
+            $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            for ($i = 0; $i < count($_POST['problem']); $i++) {
+                //注入小组事件
+                $item['pb_id'] = $_POST['problem'][$i];
+                $item['g_id'] = $_POST['g_id'];
+                $item['prd_id'] = $processProcedures->prd_id;
+
+                $record_problems = $this->model_teacher->getGroupProblem($item);
+                if (empty($record_problems)) {
+                    $req = $this->model_teacher->setGroupProblem($processCourse->id, $processProcedures->prd_id, $_POST['g_id'], $_POST['problem'][$i]);
+                }
+            }
+            if (!empty($req)) {
+                $this->db->trans_commit();
+                $resjson['state'] = 'ok';
+                $resjson['msg'] = '小组分发问题成功';
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = '小组分发问题失败';
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '分发失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 获取素材
+     * type 素材类型
+     */
+
+    public function getCourseMaterial() {
+        if (!empty($_POST['type'])) {
+            $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $item['c_id'] = $processCourse->id;
+            $item['type'] = $_POST['type'];
+            $materials = $this->model_teacher->getCourseMaterial($item);
+            $resjson['state'] = 'ok';
+            $resjson['msg'] = $materials;
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '获取素材失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 素材分发
+     * g_id 小组ID
+     * type 素材类型
+     * m_id 素材ID 
+     */
+
+    public function setGroupMaterial() {
+        if (!empty($_POST['g_id']) && !empty($_POST['type']) && !empty($_POST['m_id'])) {
+            $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $item['c_id'] = $processCourse->id;
+            $item['m_id'] = $_POST['m_id'];
+            $item['g_id'] = $_POST['g_id'];
+            $item['prd_id'] = $processProcedures->prd_id;
+            $record_materials = $this->model_teacher->getGroupMaterials($item);
+            if (empty($record_materials)) {
+                $this->model_teacher->setGroupMaterial($processCourse->id, $processProcedures->prd_id, $item['g_id'], $item['m_id']);
+                $resjson['state'] = 'ok';
+                $resjson['msg'] = '素材分发成功';
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = '该小组已有该素材';
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '素材分发失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 添加教学评估内容
+     * Assess 评估内容
+     */
+
+    public function setProcesslAssess() {
+        if (!empty($_POST['assess'])) {
+            $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $item['c_id'] = $processCourse->id;
+            $item['p_id'] = $processProcedures->prd_id;
+            $assess = $this->model_teacher->getProcesslAssess($item);
+            $content = str_replace('"', '\'', $_POST['assess']);
+            if (!empty($assess)) {
+                $req = $this->model_teacher->updateProcesslAssess($processCourse->id, $processProcedures->prd_id, $content);
+            } else {
+                $req = $this->model_teacher->setProcesslAssess($processCourse->id, $processProcedures->prd_id, $content);
+            }
+
+            if (!empty($req)) {
+                $resjson['state'] = 'ok';
+                $resjson['msg'] = '评估成功';
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = '评估失败';
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '请填写评估内容';
         }
         echo json_encode($resjson);
     }
