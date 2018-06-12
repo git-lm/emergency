@@ -58,94 +58,22 @@ class Teacher extends CI_Controller {
             $time = time();
             $beginTime = strtotime($processCourse->begin_time);
             $processCourse->time = $time - $beginTime;
+            //获取正在上课的所有教学流程
+            $processCourse->procedures = $this->model_teacher->getCourseFlow($processCourse->id);
+            //获取正在上课的所有小组
+            $processCourse->groups = $this->model_teacher->getCourseGroup($processCourse->id);
+            //获取正在上课的流程
+            $record_procedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            //获取正在上课的流程ID
+            $processCourse->prd_id = $record_procedures->prd_id;
+            //获取正在上课的流程的所有事件
+            $processCourse->processAll = $this->model_teacher->getProceduresProcess($record_procedures->prd_id);
+            //获取正在上课的事件
+            $record_process = $this->model_teacher->getProcessRecord($processCourse->id);
+            //获取正在上课的事件的索引
+            $processCourse->process = $this->model_teacher->getProcess($record_process->pc_id);
         }
         echo json_encode($processCourse);
-    }
-
-    //获取正在上课的教学流程
-    public function getProcessCourseFlow() {
-        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-        if (!empty($processCourse)) {
-            $procedures = $this->model_teacher->getCourseFlow($processCourse->id);
-        } else {
-            $procedures = '';
-        }
-        echo json_encode($procedures);
-    }
-
-    //获取正在上课的小组
-    public function getProcessCourseGroup() {
-        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-        if (!empty($processCourse)) {
-            $groups = $this->model_teacher->getCourseGroup($processCourse->id);
-        } else {
-            $groups = '';
-        }
-        echo json_encode($groups);
-    }
-
-    //获取正在上课的流程
-    public function getProcessProcedures() {
-        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-        if (!empty($processCourse)) {
-            //获取正在上课的流程
-            $record_procedures = $this->model_teacher->getProcessProcedures($processCourse->id);
-            if (!empty($record_procedures)) {
-                //获取流程索引
-                $process = $this->model_teacher->getProceduresProcess($record_procedures->prd_id);
-                $resjson['state'] = 'ok';
-                $resjson['prd_id'] = $record_procedures->prd_id;
-                $resjson['process'] = $process;
-            }
-        } else {
-            $resjson['state'] = 'no';
-        }
-        echo json_encode($resjson);
-    }
-
-    /*
-     * 获取正在上课的流程
-     */
-
-    public function getProceduresRecord() {
-        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-        if (!empty($processCourse)) {
-            //获取正在上课的流程
-            $record_procedures = $this->model_teacher->getProcessProcedures($processCourse->id);
-            if (!empty($record_procedures)) {
-                //获取流程索引
-                $process = $this->model_teacher->getProceduresProcess($record_procedures->prd_id);
-                $resjson['state'] = 'ok';
-                $resjson['prd_id'] = $record_procedures->prd_id;
-                $resjson['process'] = $process;
-            }
-        } else {
-            $resjson['state'] = 'no';
-        }
-        echo json_encode($resjson);
-    }
-
-    /*
-     * 获取正在上课的流程
-     */
-
-    public function getProcessRecord() {
-        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-        if (!empty($processCourse)) {
-            //获取正在上课的流程
-            $record_process = $this->model_teacher->getProcessRecord($processCourse->id);
-            if (!empty($record_process)) {
-                //获取流程索引事件
-                $process = $this->model_teacher->getProcess($record_process->pc_id);
-                $resjson['state'] = 'ok';
-                $resjson['msg'] = $process;
-            } else {
-                $resjson['state'] = 'no';
-            }
-        } else {
-            $resjson['state'] = 'no';
-        }
-        echo json_encode($resjson);
     }
 
     /*     * **************************************************分隔符     上部分刷新获取   下部分事件获取****************************************************************************************** */
