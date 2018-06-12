@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <title></title>
         <!--css-->
-        <link rel="stylesheet" type="text/css" href="{base}css/front/public.css" />
-        <link rel="stylesheet" type="text/css" href="{base}css/front/index.css" />
+        <link rel="stylesheet" type="text/css" href="/css/front/public.css" />
+        <link rel="stylesheet" type="text/css" href="/css/front/index.css" />
 
         <!--js-->
-        <script type="text/javascript" src="{base}js/jquery.min.js"></script>
-        <script type="text/javascript" src="{base}js/front/index.js"></script>
-        <script src="{base}js/plugins/layer/layer.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/front/index.js"></script>
+        <script src="/js/plugins/layer/layer.min.js"></script>
 
 
         <script>
-            var base ='{base}';
+            var base = '{base}';
         </script>
     </head>
     <body>
@@ -76,19 +76,6 @@
                 <div class="right_top right_top_teacher">
                     <button>教学流程索引</button>
                     <ol class="qus">
-                        <li><a href="javascript:;">问题2</a></li>
-                        <li><a href="javascript:;">问题3</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
-                        <li><a href="javascript:;">问题4</a></li>
                     </ol>
 
                     <p class="ckgd"><button class="more_btn">查看更多</button></p>
@@ -182,7 +169,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <!--弹出层  点击问题分发页面-->
