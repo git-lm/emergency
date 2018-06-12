@@ -18,7 +18,16 @@ class Student extends CI_Controller {
         $this->load->model('uploads');
         $this->load->add_package_path(APPPATH . '../package_front', false);
         $this->now_time = date('Y-m-d H:i:s');
-       
+    }
+
+    /*
+     * 首页
+     */
+
+    public function index() {
+        $data = lz_tag();
+        $data = array_merge($data, $this->data);
+        $this->parser->parse('student', $data);
     }
 
 }
