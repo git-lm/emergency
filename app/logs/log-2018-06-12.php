@@ -8567,3 +8567,2165 @@ DEBUG - 2018-06-12 01:19:58 --> Model Class Initialized
 DEBUG - 2018-06-12 01:19:58 --> Model Class Initialized
 DEBUG - 2018-06-12 01:19:58 --> Final output sent to browser
 DEBUG - 2018-06-12 01:19:58 --> Total execution time: 0.1471
+DEBUG - 2018-06-12 22:55:19 --> Config Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:55:19 --> URI Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Router Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Config Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:55:19 --> URI Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Router Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 22:55:19 --> Output Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Security Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 22:55:19 --> Input Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:55:19 --> Language Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Output Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Security Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Input Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:55:19 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:55:19 --> Language Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:55:19 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:55:19 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:55:19 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:55:19 --> Database Driver Class Initialized
+ERROR - 2018-06-12 22:55:20 --> Severity: Warning  --> mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'localhost' (10061) C:\xampp\htdocs\emergency\system\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2018-06-12 22:55:20 --> Severity: Warning  --> mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'localhost' (10061) C:\xampp\htdocs\emergency\system\database\drivers\mysql\mysql_driver.php 73
+ERROR - 2018-06-12 22:55:20 --> Unable to connect to the database
+ERROR - 2018-06-12 22:55:20 --> Unable to connect to the database
+DEBUG - 2018-06-12 22:55:20 --> Language file loaded: language/chinese/db_lang.php
+DEBUG - 2018-06-12 22:55:20 --> Language file loaded: language/chinese/db_lang.php
+DEBUG - 2018-06-12 22:55:20 --> Config Class Initialized
+DEBUG - 2018-06-12 22:55:20 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:55:20 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:55:20 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:55:20 --> URI Class Initialized
+DEBUG - 2018-06-12 22:55:20 --> Router Class Initialized
+ERROR - 2018-06-12 22:55:20 --> 404 Page Not Found --> favicon.ico
+DEBUG - 2018-06-12 22:56:43 --> Config Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:56:43 --> URI Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Router Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> No URI present. Default controller set.
+DEBUG - 2018-06-12 22:56:43 --> Output Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Security Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Input Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:56:43 --> Language Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:56:43 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:56:43 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Session Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:56:43 --> A session cookie was not found.
+DEBUG - 2018-06-12 22:56:43 --> Session routines successfully run
+DEBUG - 2018-06-12 22:56:43 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:43 --> File loaded: C:\xampp\htdocs\emergency\app\../package_main/login.php
+DEBUG - 2018-06-12 22:56:43 --> Final output sent to browser
+DEBUG - 2018-06-12 22:56:43 --> Total execution time: 0.1223
+DEBUG - 2018-06-12 22:56:52 --> Config Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:56:52 --> URI Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Router Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Output Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Security Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Input Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:56:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:56:52 --> Language Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:56:52 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Session Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:56:52 --> Session routines successfully run
+DEBUG - 2018-06-12 22:56:52 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 22:56:52 --> Final output sent to browser
+DEBUG - 2018-06-12 22:56:52 --> Total execution time: 0.1306
+DEBUG - 2018-06-12 22:56:52 --> Config Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:56:52 --> URI Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Router Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Output Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Security Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Input Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:56:52 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:56:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:56:52 --> Language Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:56:52 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Session Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:56:52 --> Session routines successfully run
+DEBUG - 2018-06-12 22:56:52 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> Model Class Initialized
+DEBUG - 2018-06-12 22:56:52 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/loginTeacher.php
+DEBUG - 2018-06-12 22:56:52 --> Final output sent to browser
+DEBUG - 2018-06-12 22:56:52 --> Total execution time: 0.1289
+DEBUG - 2018-06-12 22:57:01 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:01 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:01 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:01 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:01 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:01 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:01 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:01 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:01 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:01 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:01 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:01 --> Total execution time: 0.1404
+DEBUG - 2018-06-12 22:57:02 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:02 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:02 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:02 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 22:57:02 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:02 --> Total execution time: 0.1336
+DEBUG - 2018-06-12 22:57:02 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:02 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:02 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:02 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:02 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:02 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:02 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:02 --> Total execution time: 0.1834
+DEBUG - 2018-06-12 22:57:02 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:02 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:02 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:03 --> Total execution time: 0.2156
+DEBUG - 2018-06-12 22:57:03 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:03 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:03 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:03 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:03 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:03 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:03 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:03 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:03 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:03 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:03 --> Total execution time: 0.2641
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:03 --> Total execution time: 0.2834
+DEBUG - 2018-06-12 22:57:03 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:03 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:03 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:03 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:03 --> Total execution time: 0.3821
+DEBUG - 2018-06-12 22:57:03 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:03 --> Total execution time: 0.2790
+DEBUG - 2018-06-12 22:57:11 --> Config Class Initialized
+DEBUG - 2018-06-12 22:57:11 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:57:11 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:57:11 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:57:11 --> URI Class Initialized
+DEBUG - 2018-06-12 22:57:11 --> Router Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Output Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Security Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Input Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:12 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:12 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:57:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:57:12 --> Language Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:57:12 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:57:12 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Session Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:57:12 --> Session routines successfully run
+DEBUG - 2018-06-12 22:57:12 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Model Class Initialized
+DEBUG - 2018-06-12 22:57:12 --> Final output sent to browser
+DEBUG - 2018-06-12 22:57:12 --> Total execution time: 0.1330
+DEBUG - 2018-06-12 22:58:37 --> Config Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Hooks Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 22:58:37 --> URI Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Router Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Output Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Security Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Input Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:58:37 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:58:37 --> XSS Filtering completed
+DEBUG - 2018-06-12 22:58:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 22:58:37 --> Language Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Loader Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 22:58:37 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 22:58:37 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Session Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 22:58:37 --> Session routines successfully run
+DEBUG - 2018-06-12 22:58:37 --> Controller Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Model Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Model Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Model Class Initialized
+DEBUG - 2018-06-12 22:58:37 --> Final output sent to browser
+DEBUG - 2018-06-12 22:58:37 --> Total execution time: 0.1235
+DEBUG - 2018-06-12 23:02:49 --> Config Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:02:49 --> URI Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Router Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Output Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Security Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Input Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:02:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:02:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:02:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:02:49 --> Language Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:02:49 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:02:49 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Session Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:02:49 --> Session routines successfully run
+DEBUG - 2018-06-12 23:02:49 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:02:49 --> Final output sent to browser
+DEBUG - 2018-06-12 23:02:49 --> Total execution time: 0.1139
+DEBUG - 2018-06-12 23:03:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:28 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:28 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:28 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:28 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:28 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:03:28 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:28 --> Total execution time: 0.1187
+DEBUG - 2018-06-12 23:03:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:28 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:28 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:28 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:28 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:28 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:28 --> Total execution time: 0.1573
+DEBUG - 2018-06-12 23:03:28 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:29 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:29 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:29 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:29 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:29 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:29 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:29 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:29 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:29 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:29 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:29 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:29 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:29 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:29 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Total execution time: 0.1803
+DEBUG - 2018-06-12 23:03:29 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:29 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:29 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:29 --> Total execution time: 0.1812
+DEBUG - 2018-06-12 23:03:29 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:29 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:29 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:29 --> Total execution time: 0.2511
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:29 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:29 --> Total execution time: 0.2440
+DEBUG - 2018-06-12 23:03:29 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:29 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:29 --> Total execution time: 0.5060
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1262
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1263
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1516
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1542
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Config Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1814
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1883
+DEBUG - 2018-06-12 23:03:30 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:03:30 --> URI Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Router Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Output Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Security Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Input Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:03:30 --> Language Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:03:30 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Session Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:03:30 --> Session routines successfully run
+DEBUG - 2018-06-12 23:03:30 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Model Class Initialized
+DEBUG - 2018-06-12 23:03:30 --> Final output sent to browser
+DEBUG - 2018-06-12 23:03:30 --> Total execution time: 0.1898
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.1298
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.1681
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.1942
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:03 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:03 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:03 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.2051
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.2216
+DEBUG - 2018-06-12 23:21:03 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:03 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:03 --> Total execution time: 0.2374
+DEBUG - 2018-06-12 23:21:22 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:22 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:22 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:22 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:22 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:22 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:22 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:22 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:22 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:21:22 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:22 --> Total execution time: 0.1878
+DEBUG - 2018-06-12 23:21:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:23 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:23 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:23 --> Total execution time: 0.2581
+DEBUG - 2018-06-12 23:21:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:23 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:23 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:23 --> Total execution time: 0.3506
+DEBUG - 2018-06-12 23:21:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:21:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:21:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:21:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:23 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:21:23 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:21:23 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:23 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Total execution time: 0.2910
+DEBUG - 2018-06-12 23:21:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:23 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:23 --> Total execution time: 0.3838
+DEBUG - 2018-06-12 23:21:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:21:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:21:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:21:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:21:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:21:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:21:24 --> Total execution time: 0.3577
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:33 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:33 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:33 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:33 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:33 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:22:33 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:33 --> Total execution time: 0.1804
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:33 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:33 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:33 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:33 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:33 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:33 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:33 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:33 --> Total execution time: 0.2552
+DEBUG - 2018-06-12 23:22:33 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:33 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:33 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:33 --> Total execution time: 0.3289
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:33 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:33 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:33 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:33 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:33 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:33 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Config Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:22:33 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:22:34 --> URI Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Router Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:34 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:34 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:34 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Output Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:34 --> Security Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Total execution time: 0.2417
+DEBUG - 2018-06-12 23:22:34 --> Input Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:34 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:22:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:22:34 --> Language Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:22:34 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:34 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:34 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:34 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Total execution time: 0.3700
+DEBUG - 2018-06-12 23:22:34 --> Session Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:22:34 --> Session routines successfully run
+DEBUG - 2018-06-12 23:22:34 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Model Class Initialized
+DEBUG - 2018-06-12 23:22:34 --> Final output sent to browser
+DEBUG - 2018-06-12 23:22:34 --> Total execution time: 0.2807
+DEBUG - 2018-06-12 23:23:50 --> Config Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:23:50 --> URI Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Router Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Output Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Security Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Input Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:50 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:23:50 --> Language Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:23:50 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:23:50 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Session Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:23:50 --> Session routines successfully run
+DEBUG - 2018-06-12 23:23:50 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:50 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:23:50 --> Final output sent to browser
+DEBUG - 2018-06-12 23:23:50 --> Total execution time: 0.1621
+DEBUG - 2018-06-12 23:23:51 --> Config Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:23:51 --> URI Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Router Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Output Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Security Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Input Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:23:51 --> Language Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:23:51 --> Config Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:23:51 --> URI Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Router Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Output Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Security Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Input Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:23:51 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:23:51 --> Language Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Session Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:23:51 --> Session routines successfully run
+DEBUG - 2018-06-12 23:23:51 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Final output sent to browser
+DEBUG - 2018-06-12 23:23:51 --> Total execution time: 0.2597
+DEBUG - 2018-06-12 23:23:51 --> Session Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:23:51 --> Session routines successfully run
+DEBUG - 2018-06-12 23:23:51 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:23:51 --> Final output sent to browser
+DEBUG - 2018-06-12 23:23:51 --> Total execution time: 0.2338
+DEBUG - 2018-06-12 23:24:17 --> Config Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:24:17 --> URI Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Router Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Output Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Security Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Input Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:24:17 --> Language Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:24:17 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Session Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:24:17 --> Session routines successfully run
+DEBUG - 2018-06-12 23:24:17 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:24:17 --> Final output sent to browser
+DEBUG - 2018-06-12 23:24:17 --> Total execution time: 0.1821
+DEBUG - 2018-06-12 23:24:17 --> Config Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:24:17 --> URI Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Router Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Output Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Security Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Input Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:24:17 --> Language Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Config Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:24:17 --> URI Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:24:17 --> Router Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Output Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Security Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Input Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:24:17 --> Language Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:24:17 --> Session Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:24:17 --> Session routines successfully run
+DEBUG - 2018-06-12 23:24:17 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Final output sent to browser
+DEBUG - 2018-06-12 23:24:17 --> Session Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Total execution time: 0.1737
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:24:17 --> Session routines successfully run
+DEBUG - 2018-06-12 23:24:17 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Final output sent to browser
+DEBUG - 2018-06-12 23:24:17 --> Total execution time: 0.1713
+DEBUG - 2018-06-12 23:24:17 --> Config Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Config Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:24:17 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> URI Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:24:17 --> Router Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> URI Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Router Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Output Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Output Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Security Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Security Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Input Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:24:17 --> Language Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Input Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:24:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:24:17 --> Language Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:24:17 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:24:17 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:24:17 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Session Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Session Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:24:17 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:24:17 --> Session routines successfully run
+DEBUG - 2018-06-12 23:24:17 --> Session routines successfully run
+DEBUG - 2018-06-12 23:24:17 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Model Class Initialized
+DEBUG - 2018-06-12 23:24:17 --> Final output sent to browser
+DEBUG - 2018-06-12 23:24:17 --> Total execution time: 0.1411
+DEBUG - 2018-06-12 23:24:18 --> Final output sent to browser
+DEBUG - 2018-06-12 23:24:18 --> Total execution time: 0.1515
+DEBUG - 2018-06-12 23:29:23 --> Config Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:29:23 --> URI Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Router Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Output Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Security Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Input Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:23 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:29:23 --> Language Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:29:23 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:29:23 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Session Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:29:23 --> Session routines successfully run
+DEBUG - 2018-06-12 23:29:23 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:23 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:29:23 --> Final output sent to browser
+DEBUG - 2018-06-12 23:29:23 --> Total execution time: 0.5303
+DEBUG - 2018-06-12 23:29:24 --> Config Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:29:24 --> URI Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Router Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Output Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Security Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Input Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:29:24 --> Language Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Config Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:29:24 --> URI Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Router Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:29:24 --> Output Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Security Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Input Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:29:24 --> Language Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:29:24 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:29:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:29:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:29:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:29:24 --> Total execution time: 0.1944
+DEBUG - 2018-06-12 23:29:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:29:24 --> Total execution time: 0.2664
+DEBUG - 2018-06-12 23:29:24 --> Config Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:29:24 --> URI Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Router Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Output Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Security Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Input Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:29:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:29:24 --> Language Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:29:24 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:29:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:29:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:29:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:29:24 --> Total execution time: 0.2690
+DEBUG - 2018-06-12 23:34:27 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:27 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:27 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:27 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:27 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:27 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:34:27 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:27 --> Total execution time: 0.1345
+DEBUG - 2018-06-12 23:34:27 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:27 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:27 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:27 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:27 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:27 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:27 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:27 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:27 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:27 --> Total execution time: 0.1783
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:27 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:27 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:27 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:27 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:27 --> Total execution time: 0.1739
+DEBUG - 2018-06-12 23:34:43 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:43 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:43 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:43 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:43 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:43 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:43 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:43 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:43 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:43 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:44 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:44 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:44 --> Total execution time: 0.1298
+DEBUG - 2018-06-12 23:34:45 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:45 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:45 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:45 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:45 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:45 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:45 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:46 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:46 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:46 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:46 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:46 --> Total execution time: 0.1158
+DEBUG - 2018-06-12 23:34:49 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:49 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:49 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:49 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:49 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:49 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:49 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:49 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:49 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:49 --> Total execution time: 0.1103
+DEBUG - 2018-06-12 23:34:51 --> Config Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:34:51 --> URI Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Router Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Output Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Security Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Input Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:51 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:34:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:34:51 --> Language Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:34:51 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:34:51 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Session Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:34:51 --> Session routines successfully run
+DEBUG - 2018-06-12 23:34:51 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Model Class Initialized
+DEBUG - 2018-06-12 23:34:51 --> Final output sent to browser
+DEBUG - 2018-06-12 23:34:51 --> Total execution time: 0.1438
+DEBUG - 2018-06-12 23:35:10 --> Config Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:35:10 --> URI Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Router Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Output Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Security Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Input Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:10 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:35:10 --> Language Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:35:10 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:35:10 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Session Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:35:10 --> Session routines successfully run
+DEBUG - 2018-06-12 23:35:10 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:10 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:35:10 --> Final output sent to browser
+DEBUG - 2018-06-12 23:35:10 --> Total execution time: 0.1219
+DEBUG - 2018-06-12 23:35:11 --> Config Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Config Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:35:11 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:35:11 --> URI Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> URI Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Router Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Router Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Output Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Output Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Security Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Security Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Input Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Input Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:11 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:35:11 --> Language Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:11 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:35:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:35:11 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:35:11 --> Language Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:35:11 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:35:11 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:35:11 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Session Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:35:11 --> Session routines successfully run
+DEBUG - 2018-06-12 23:35:11 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Session Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:35:11 --> Session routines successfully run
+DEBUG - 2018-06-12 23:35:11 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Final output sent to browser
+DEBUG - 2018-06-12 23:35:11 --> Total execution time: 0.2023
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Model Class Initialized
+DEBUG - 2018-06-12 23:35:11 --> Final output sent to browser
+DEBUG - 2018-06-12 23:35:11 --> Total execution time: 0.2076
+DEBUG - 2018-06-12 23:36:02 --> Config Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:36:02 --> URI Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Router Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Output Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Security Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Input Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:36:02 --> Language Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:36:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Session Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:36:02 --> Session routines successfully run
+DEBUG - 2018-06-12 23:36:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/teacher.php
+DEBUG - 2018-06-12 23:36:02 --> Final output sent to browser
+DEBUG - 2018-06-12 23:36:02 --> Total execution time: 0.1165
+DEBUG - 2018-06-12 23:36:02 --> Config Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:36:02 --> Config Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> URI Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:36:02 --> Router Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> URI Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Router Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Output Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Security Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Input Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:36:02 --> Output Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Security Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Input Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:36:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:36:02 --> Language Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Language Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:36:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:36:02 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Session Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:36:02 --> Session routines successfully run
+DEBUG - 2018-06-12 23:36:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Final output sent to browser
+DEBUG - 2018-06-12 23:36:02 --> Session Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Total execution time: 0.2803
+DEBUG - 2018-06-12 23:36:02 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:36:02 --> Session routines successfully run
+DEBUG - 2018-06-12 23:36:02 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Model Class Initialized
+DEBUG - 2018-06-12 23:36:02 --> Final output sent to browser
+DEBUG - 2018-06-12 23:36:02 --> Total execution time: 0.3018
+DEBUG - 2018-06-12 23:38:24 --> Config Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:38:24 --> URI Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Router Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Output Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Security Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Input Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:38:24 --> Language Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:38:24 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:38:24 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:38:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:38:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:24 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/student.php
+DEBUG - 2018-06-12 23:38:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:38:24 --> Total execution time: 0.1565
+DEBUG - 2018-06-12 23:38:27 --> Config Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:38:27 --> URI Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Router Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Output Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Security Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Input Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:27 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:38:27 --> Language Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:38:27 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:38:27 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Session Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:38:27 --> Session routines successfully run
+DEBUG - 2018-06-12 23:38:27 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:27 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/student.php
+DEBUG - 2018-06-12 23:38:27 --> Final output sent to browser
+DEBUG - 2018-06-12 23:38:27 --> Total execution time: 0.1055
+DEBUG - 2018-06-12 23:38:28 --> Config Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:38:28 --> URI Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Router Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Output Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Security Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Input Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:28 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:38:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:38:28 --> Language Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:38:28 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:38:28 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Session Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:38:28 --> Session routines successfully run
+DEBUG - 2018-06-12 23:38:28 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> Model Class Initialized
+DEBUG - 2018-06-12 23:38:28 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/student.php
+DEBUG - 2018-06-12 23:38:28 --> Final output sent to browser
+DEBUG - 2018-06-12 23:38:28 --> Total execution time: 0.1037
+DEBUG - 2018-06-12 23:39:22 --> Config Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:39:22 --> URI Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Router Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Output Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Security Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Input Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:39:22 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:39:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:39:22 --> Language Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:39:22 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:39:22 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Session Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:39:22 --> Session routines successfully run
+DEBUG - 2018-06-12 23:39:22 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> Model Class Initialized
+DEBUG - 2018-06-12 23:39:22 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/student.php
+DEBUG - 2018-06-12 23:39:22 --> Final output sent to browser
+DEBUG - 2018-06-12 23:39:22 --> Total execution time: 0.1129
+DEBUG - 2018-06-12 23:44:40 --> Config Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:44:40 --> URI Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Router Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Output Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Security Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Input Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:44:40 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:44:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:44:40 --> Language Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:44:40 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Session Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:44:40 --> Session routines successfully run
+DEBUG - 2018-06-12 23:44:40 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/student.php
+DEBUG - 2018-06-12 23:44:40 --> Final output sent to browser
+DEBUG - 2018-06-12 23:44:40 --> Total execution time: 0.1318
+DEBUG - 2018-06-12 23:44:40 --> Config Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:44:40 --> URI Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Router Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Output Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Security Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Input Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:44:40 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:44:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:44:40 --> Language Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:44:40 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Session Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:44:40 --> Session routines successfully run
+DEBUG - 2018-06-12 23:44:40 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+DEBUG - 2018-06-12 23:44:40 --> Model Class Initialized
+ERROR - 2018-06-12 23:44:40 --> 404 Page Not Found --> frontPublic/loginGroup
+DEBUG - 2018-06-12 23:59:14 --> Config Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:59:14 --> URI Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Router Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Output Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Security Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Input Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:14 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:59:14 --> Language Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:59:14 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:59:14 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Session Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:59:14 --> Session routines successfully run
+DEBUG - 2018-06-12 23:59:14 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:14 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/loginGroup.php
+DEBUG - 2018-06-12 23:59:14 --> Final output sent to browser
+DEBUG - 2018-06-12 23:59:14 --> Total execution time: 0.1490
+DEBUG - 2018-06-12 23:59:24 --> Config Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:59:24 --> URI Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Router Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Output Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Security Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Input Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:24 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:59:24 --> Language Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:59:24 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:59:24 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Session Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:59:24 --> Session routines successfully run
+DEBUG - 2018-06-12 23:59:24 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:24 --> Final output sent to browser
+DEBUG - 2018-06-12 23:59:24 --> Total execution time: 0.1535
+DEBUG - 2018-06-12 23:59:25 --> Config Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Hooks Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Utf8 Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> UTF-8 Support Enabled
+DEBUG - 2018-06-12 23:59:25 --> URI Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Router Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Output Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Security Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Input Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:25 --> XSS Filtering completed
+DEBUG - 2018-06-12 23:59:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2018-06-12 23:59:25 --> Language Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Loader Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Helper loaded: lz_helper
+DEBUG - 2018-06-12 23:59:25 --> Helper loaded: url_helper
+DEBUG - 2018-06-12 23:59:25 --> Database Driver Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Session Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Helper loaded: string_helper
+DEBUG - 2018-06-12 23:59:25 --> Session routines successfully run
+DEBUG - 2018-06-12 23:59:25 --> Controller Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> Model Class Initialized
+DEBUG - 2018-06-12 23:59:25 --> File loaded: C:\xampp\htdocs\emergency\app\../package_front/loginGroup.php
+DEBUG - 2018-06-12 23:59:25 --> Final output sent to browser
+DEBUG - 2018-06-12 23:59:25 --> Total execution time: 0.1820

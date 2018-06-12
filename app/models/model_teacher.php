@@ -24,17 +24,6 @@ class model_teacher extends CI_Model {
     }
 
     /*
-     * 获取课程下的教学流程
-     * cid  课程ID
-     */
-
-    public function getCourseFlow($cid = 0) {
-        $sql = 'select * from procedures where state = 0 and c_id =' . $cid;
-        $procedures = $this->db->query($sql)->result();
-        return $procedures;
-    }
-
-    /*
      * 选择小组
      * cid 课程ID
      */
@@ -56,18 +45,6 @@ class model_teacher extends CI_Model {
         $sql = 'select * from courses where u_id = ' . $uid . ' and state = ' . $state;
         $courses = $this->db->query($sql)->result();
         return $courses;
-    }
-
-    /*
-     * 获取正在上课的流程
-     * c_id  课程ID
-     * 
-     */
-
-    public function getProcessProcedures($c_id = 0) {
-        $sql = 'select * from record_procedures where c_id = ' . $c_id . ' and end_time is null';
-        $record_procedures = $this->db->query($sql)->row();
-        return $record_procedures;
     }
 
     /*
@@ -116,28 +93,6 @@ class model_teacher extends CI_Model {
     }
 
     /*
-     * 获取流程下的事件索引
-     * prd_id 流程ID
-     */
-
-    public function getProceduresProcess($prd_id = 0) {
-        $sql = 'select * from process where p_id = ' . $prd_id . ' order by id asc';
-        $process = $this->db->query($sql)->result();
-        return $process;
-    }
-
-    /*
-     * 获取单个索引具体内容
-     * p_id 流程事件ID 
-     */
-
-    public function getProcess($p_id = 0) {
-        $sql = 'select * from process where id = ' . $p_id;
-        $process = $this->db->query($sql)->row();
-        return $process;
-    }
-
-    /*
      * 获取单个流程
      * p_id ID
      */
@@ -163,17 +118,6 @@ class model_teacher extends CI_Model {
         } else {
             return true;
         }
-    }
-
-    /*
-     * 获取正在上课的流程事件
-     * c_id  正在上课课程
-     */
-
-    public function getProcessRecord($c_id = 0) {
-        $sql = 'select * from record_process where c_id = ' . $c_id . ' order by id desc';
-        $record_process = $this->db->query($sql)->row();
-        return $record_process;
     }
 
     /*

@@ -39,9 +39,56 @@ class frontPublic extends CI_Controller {
         if (!empty($_POST['username']) && !empty($_POST['password'])) {
             $resjson = $this->model_public->loginCheckTeacher($_POST);
             if ($resjson['state'] == 'ok') {
-                $this->session->set_userdata('emergerncyUserId',$resjson['msg']['id']);
+                $this->session->set_userdata('emergerncyUserId', $resjson['msg']['id']);
                 $resjson['state'] = 'ok';
                 $resjson['msg'] = '登录成功';
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = $resjson['msg'];
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '请完整填写登录信息';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 前端小组登录页面
+     */
+
+    public function loginGroup() {
+        $data = lz_tag();
+        $data = array_merge($data, $this->data);
+        $this->parser->parse(__FUNCTION__, $data);
+    }
+
+    /*
+     * 验证登录信息
+     */
+
+    public function loginCheckGroup() {
+
+        if (!empty($_POST['username']) && !empty($_POST['password'])) {
+
+            $resjson = $this->model_public->loginCheckGroup($_POST);
+            if ($resjson['state'] == 'ok') {
+                //获取小组信息
+                $group = $resjson['msg'];
+                $course = $this->model_public->getGroupCourse($group['id']);
+                if (!empty($course)) {
+                    if (!empty($course['state']) && $course['state'] == 2) {
+                        $this->session->set_userdata('emergerncyGroupId', $group['id']);
+                        $resjson['state'] = 'ok';
+                        $resjson['msg'] = '登录成功';
+                    } else {
+                        $resjson['state'] = 'no';
+                        $resjson['msg'] = '该小组课程未上课：上课时间为' . $course['begin_time'];
+                    }
+                } else {
+                    $resjson['state'] = 'no';
+                    $resjson['msg'] = '该小组无课程';
+                }
             } else {
                 $resjson['state'] = 'no';
                 $resjson['msg'] = $resjson['msg'];

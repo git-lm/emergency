@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>一款基于JQuery做的动画背景后台管理登录模板 - </title>
 
-        <link href="/css/front/main.css" rel="stylesheet" type="text/css" />
+        <link href="{base}css/front/main.css" rel="stylesheet" type="text/css" />
     </head>
     <script>
         var base = '{base}';
@@ -22,7 +22,7 @@
                         </div>
                         <div class="pwd">
                             <label>密　码</label><input type="password" class="text" id="value_2" placeholder="密码" name="password" tabindex="2" />
-                            <input type="button" class="loginSubmit loginTeacherSubmit" tabindex="3" value="登录" />
+                            <input type="button" class="loginSubmit loginGroupSubmit" tabindex="3" value="登录" />
                             <div class="check"></div>
                         </div>
                         <div class="tip"></div>

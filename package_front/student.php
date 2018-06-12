@@ -9,25 +9,25 @@
         <!--js-->
         <script type="text/javascript" src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/front/index.js"></script>
+        <script type="text/javascript" src="/js/front/student.js"></script>
     </head>
+    <script>
+        var base = '{base}';
+    </script>
     <body>
-        <div class="main">
+        <div class="main student">
             <!-- 左侧nav -->
             <div class="nav">
                 <div class="top_nav">
-                    名称<a class="dp">小组点评</a>
+                    <div class="group-name"></div>
+
+                    <a class="dp">小组点评</a>
                 </div>
 
 
                 <p class="lct">教学流程图</p>
-                <ul>
-                    <li>流程接报</li>
-                    <li>先期处理</li>
-                    <li>中期处理</li>
-                    <li>后期处理</li>
-                    <li>善后处理</li>
-                    <li>新闻通报</li>
-                    <li>总结反思</li>
+                <ul class="procedure">
+
                 </ul>
                 <!--idea-->
                 <div class="idea">
@@ -44,27 +44,14 @@
                 <!--c_top-->
                 <div class="c_top c_top_student">
                     <div class="L half">
-                        小组名称
-                        <p class="name">名称名称</p>
+                        <div class="group-name"></div>
+                        <p class="name procedureName"></p>
                     </div>
                     <div class="R half half_tea">
                         问题展示区
                         <div class="div_show">
                             <ul class="questions">
-                                <li class="cur"><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题2</a></li>
-                                <li><a href="javascript:;">问题3</a></li>
-                                <li><a href="javascript:;">问题4</a></li>
-                                <li><a href="javascript:;">问题4</a></li>
-                                <li><a href="javascript:;">问题5</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题1</a></li>
-                                <li><a href="javascript:;">问题9</a></li>
+
                             </ul>
 
                             <span href="javascript:;" class="lookmore" style="cursor:pointer; color:#888; padding-top:20px;display:block;">点击查看更多</span>
@@ -92,29 +79,19 @@
                     </ol>	
 
                     <ul>
-                        <li class="cur">
-                            <div>相关案例1</div>
-                            <div>相关案例2</div>
-                            <div>相关案例3</div>
-                            <div>相关案例3</div>
-                            <div>相关案例3</div>
+                        <li class="cur relevants">
+                            <div></div>
                             <p class="p_more">查看更多</p>
                         </li>
 
-                        <li>
-                            <div>事件案例1</div>
-                            <div>事件案例2</div>
-                            <div>相关案例3</div>
-                            <div>相关案例3</div>
-                            <div>相关案例3</div>
-                            <div>相关案例3</div>
+                        <li class="events">
+                            <div></div>
                             <p class="p_more">查看更多</p>
                         </li>
 
-                        <li>
-                            <div>素材展示1</div>
-                            <div>素材展示2</div>
-                            <div>素材展示3</div>
+                        <li class="materials">
+                            <div></div>
+
                             <p class="p_more">查看更多</p>
                         </li>
                     </ul>

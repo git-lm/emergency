@@ -18,7 +18,7 @@
         </script>
     </head>
     <body>
-        <div class="main">
+        <div class="main teacher">
             <!-- 左侧nav -->
             <div class="nav">
                 <div class="top_nav">

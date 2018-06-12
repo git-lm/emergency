@@ -15,6 +15,7 @@ class Teacher extends CI_Controller {
 
         parent::__construct();
         $this->load->model('model_teacher');
+        $this->load->model('model_public');
         $this->load->model('uploads');
         $this->load->add_package_path(APPPATH . '../package_front', false);
         $this->now_time = date('Y-m-d H:i:s');
@@ -59,19 +60,19 @@ class Teacher extends CI_Controller {
             $beginTime = strtotime($processCourse->begin_time);
             $processCourse->time = $time - $beginTime;
             //获取正在上课的所有教学流程
-            $processCourse->procedures = $this->model_teacher->getCourseFlow($processCourse->id);
+            $processCourse->procedures = $this->model_public->getCourseFlow($processCourse->id);
             //获取正在上课的所有小组
             $processCourse->groups = $this->model_teacher->getCourseGroup($processCourse->id);
             //获取正在上课的流程
-            $record_procedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $record_procedures = $this->model_public->getProcessProcedures($processCourse->id);
             //获取正在上课的流程ID
             $processCourse->prd_id = $record_procedures->prd_id;
             //获取正在上课的流程的所有事件
-            $processCourse->processAll = $this->model_teacher->getProceduresProcess($record_procedures->prd_id);
+            $processCourse->processAll = $this->model_public->getProceduresProcess($record_procedures->prd_id);
             //获取正在上课的事件
-            $record_process = $this->model_teacher->getProcessRecord($processCourse->id);
+            $record_process = $this->model_public->getProcessRecord($processCourse->id);
             //获取正在上课的事件的索引
-            $processCourse->process = $this->model_teacher->getProcess($record_process->pc_id);
+            $processCourse->process = $this->model_public->getProcess($record_process->pc_id);
         }
         echo json_encode($processCourse);
     }
@@ -102,7 +103,7 @@ class Teacher extends CI_Controller {
                 //正在上课的课程
                 $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
                 //获取正在上课的流程
-                $record_procedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+                $record_procedures = $this->model_public->getProcessProcedures($processCourse->id);
 
                 //如果不为空说明有正在上课的流程,结束正在上课的流程
                 if (!empty($record_procedures)) {
@@ -112,7 +113,7 @@ class Teacher extends CI_Controller {
                 $res = $this->model_teacher->setProceduresBegin($processCourse->id, $_POST['procedureId']);
                 if ($res) {
                     //获取流程索引
-                    $process = $this->model_teacher->getProceduresProcess($_POST['procedureId']);
+                    $process = $this->model_public->getProceduresProcess($_POST['procedureId']);
                     $resjson['state'] = 'ok';
                     $resjson['msg'] = $process;
                 } else {
@@ -136,7 +137,7 @@ class Teacher extends CI_Controller {
 
     public function getProceduresProcess() {
         if (!empty($_POST['prd_id'])) {
-            $ProceduresProcess = $this->model_teacher->getProceduresProcess($_POST['prd_id']);
+            $ProceduresProcess = $this->model_public->getProceduresProcess($_POST['prd_id']);
             $resjson['state'] = 'ok';
             $resjson['msg'] = $ProceduresProcess;
         } else {
@@ -152,7 +153,7 @@ class Teacher extends CI_Controller {
 
     public function getProcess() {
         if (!empty($_POST['p_id'])) {
-            $process = $this->model_teacher->getProcess($_POST['p_id']);
+            $process = $this->model_public->getProcess($_POST['p_id']);
             $resjson['state'] = 'ok';
             $resjson['msg'] = $process;
         } else {
@@ -169,7 +170,7 @@ class Teacher extends CI_Controller {
 
     public function setProcess() {
         if (!empty($_POST['p_id'])) {
-            $process = $this->model_teacher->getProcess($_POST['p_id']);
+            $process = $this->model_public->getProcess($_POST['p_id']);
             if (!empty($process)) {
                 $procedures = $this->model_teacher->getProcedures($process->p_id);
                 if (!empty($procedures)) {
@@ -211,7 +212,7 @@ class Teacher extends CI_Controller {
                     //获取课程事件
                     $events = $this->model_teacher->getEvents($procedures->c_id);
                     $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-                    $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+                    $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
                     //获取课程所有事件小组分配情况
                     $item['c_id'] = $procedures->c_id;
                     $item['prd_id'] = $processProcedures->prd_id;
@@ -259,7 +260,7 @@ class Teacher extends CI_Controller {
         if (!empty($_POST['event']) && !empty($_POST['group'])) {
             $this->db->trans_begin();
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
             for ($i = 0; $i < count($_POST['event']); $i++) {
                 for ($j = 0; $j < count($_POST['group']); $j++) {
                     //注入小组事件
@@ -296,7 +297,7 @@ class Teacher extends CI_Controller {
     public function getGroupEvents() {
         if (!empty($_POST['g_id'])) {
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
             $item['c_id'] = $processCourse->id;
             $item['g_id'] = $_POST['g_id'];
             $item['prd_id'] = $processProcedures->prd_id;
@@ -320,7 +321,7 @@ class Teacher extends CI_Controller {
         if (!empty($_POST['problem']) && !empty($_POST['g_id'])) {
             $this->db->trans_begin();
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
             for ($i = 0; $i < count($_POST['problem']); $i++) {
                 //注入小组事件
                 $item['pb_id'] = $_POST['problem'][$i];
@@ -377,7 +378,7 @@ class Teacher extends CI_Controller {
     public function setGroupMaterial() {
         if (!empty($_POST['g_id']) && !empty($_POST['type']) && !empty($_POST['m_id'])) {
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
             $item['c_id'] = $processCourse->id;
             $item['m_id'] = $_POST['m_id'];
             $item['g_id'] = $_POST['g_id'];
@@ -406,7 +407,7 @@ class Teacher extends CI_Controller {
     public function setProcesslAssess() {
         if (!empty($_POST['assess'])) {
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
-            $processProcedures = $this->model_teacher->getProcessProcedures($processCourse->id);
+            $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
             $item['c_id'] = $processCourse->id;
             $item['p_id'] = $processProcedures->prd_id;
             $assess = $this->model_teacher->getProcesslAssess($item);
