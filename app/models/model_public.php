@@ -17,7 +17,7 @@ class model_public extends CI_Model {
 
     public function loginCheckTeacher($params) {
         if (!empty($params['username']) && !empty($params['password'])) {
-            $sql = 'select * from users where type = 2 and username ="' . $params['username'] . '" and password = "' . MD5($params['password']) . '"';
+            $sql = 'select * from users  where   username ="' . $params['username'] . '" and password = "' . md5($params['password']) . '"';
             $res = $this->db->query($sql)->row_array();
             if (!empty($res)) {
                 $resjson['state'] = 'ok';
@@ -121,8 +121,49 @@ class model_public extends CI_Model {
         $record_process = $this->db->query($sql)->row();
         return $record_process;
     }
+
+    /*
+     * 获取单个素材
+     * m_id 
+     */
+
+    public function getMaterial($m_id = 0) {
+        $sql = 'select * from materials where id = ' . $m_id;
+        $material = $this->db->query($sql)->row_array();
+        return $material;
+    }
+
+    /*
+     * 保存消息
+     */
+
+    public function setMessage($param) {
+        $this->db->insert('record_chat', $param);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
     
-    
+    /*
+     * 获取发送后前端接收的信息
+     * g_id  小组ID 有小组ID 就是获取小组名称
+     * u_id  教师ID 有教师ID 就是获取教师名称
+     * cr_id 聊天记录ID 有聊天记录就是获取聊天记录信息
+     */
+    public function  getMessage($g_id = 0 , $u_id = 0 , $cr_id = 0){
+        
+        if(!empty($cr_id)){
+            if(!empty($g_id)){
+                $sql = 'select * from groups where id = '.$g_id;
+                $group = $this->db->query($sql)->row();
+            }
+        }else{
+            return '';
+        }
+    }
 
 }
 

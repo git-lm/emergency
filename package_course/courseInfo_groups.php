@@ -12,16 +12,19 @@
                         <div class="row">
                             <div class="col-sm-10">
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=procedures&cid={cid}'"  type="button">教学流程</button>
-                                <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=groups&cid={cid}'"  type="button">小组分配</button>
+                                <button data-toggle="button" class="right btn btn-primary btn-success col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=groups&cid={cid}'"  type="button">小组分配</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=materials&cid={cid}'"  type="button">资源素材库</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=problems&cid={cid}'" type="button">事件叠加</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=relevants&cid={cid}'" type="button">相关案例</button>
 
 
                             </div>
-                            <button data-toggle="button" class="right btn btn-primary btn-outline addgroups" type="button" itemid="<?php echo $course_id ?>">新增小组</button>
+                            <?php
+                            if ($emer_users_info['type'] == 2) {
+                                ?>
+                                <button data-toggle="button" class="right btn btn-primary btn-outline addgroups" type="button" itemid="<?php echo $course_id ?>">新增小组</button>
 
-
+                            <?php } ?>
                         </div>
                         <div class="table-responsive">
                             <table class="table table-striped">
@@ -31,7 +34,11 @@
                                         <th>小组名称</th>
                                         <th>小组账号</th>
                                         <th>小组密码</th>
-                                        <th>操作</th>
+                                        <?php
+                                        if ($emer_users_info['type'] == 2) {
+                                            ?>
+                                            <th>操作</th>
+                                        <?php } ?>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,11 +50,15 @@
                                             <td class="group-name"><?php echo $list->name ?></td>
                                             <td class="group-username"><?php echo $list->username ?></td>
                                             <td class="group-password"><?php echo $list->password ?></td>
-                                            <td>
-                                                <button type="button" class="btn btn-default btn-sm groups-edit"  itemid="<?php echo $list->id ?>">修改</button>
-                                                <button type="button" class="btn btn-default btn-sm groups-del"  itemid="<?php echo $list->id ?>">删除</button>
+                                            <?php
+                                            if ($emer_users_info['type'] == 2) {
+                                                ?>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-sm groups-edit"  itemid="<?php echo $list->id ?>">修改</button>
+                                                    <button type="button" class="btn btn-default btn-sm groups-del"  itemid="<?php echo $list->id ?>">删除</button>
 
-                                            </td>
+                                                </td>
+                                            <?php } ?>
                                         </tr>
                                     <?php } ?>
 

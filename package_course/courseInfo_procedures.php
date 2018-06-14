@@ -11,7 +11,7 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-sm-10">
-                                <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=procedures&cid={cid}'"  type="button">教学流程</button>
+                                <button data-toggle="button" class="right btn btn-primary btn-success col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=procedures&cid={cid}'"  type="button">教学流程</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=groups&cid={cid}'"  type="button">小组分配</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=materials&cid={cid}'"  type="button">资源素材库</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=problems&cid={cid}'" type="button">事件叠加</button>
@@ -19,8 +19,11 @@
 
 
                             </div>
-                            <button data-toggle="button" class="right btn btn-primary btn-outline addprocedures" type="button" itemid="<?php echo $course_id ?>">新增教学流程</button>
-
+                            <?php
+                            if ($emer_users_info['type'] == 2) {
+                                ?>
+                                <button data-toggle="button" class="right btn btn-primary btn-outline addprocedures" type="button" itemid="<?php echo $course_id ?>">新增教学流程</button>
+                            <?php } ?>
 
                         </div>
                         <div class="table-responsive">
@@ -40,10 +43,15 @@
                                             <td><?php echo $list->rownum ?></td>
                                             <td class="procedures-title"><?php echo $list->title ?></td>
                                             <td>
-                                                <button type="button" class="btn btn-default btn-sm procedures-edit" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">修改</button>
-                                                <button type="button" class="btn btn-default btn-sm procedures-del" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">删除</button>
-                                                <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/processInfo.html?pid=<?php echo $list->id ?>'">添加索引</button>
-
+                                                <?php
+                                                if ($emer_users_info['type'] == 2) {
+                                                    ?>
+                                                    <button type="button" class="btn btn-default btn-sm procedures-edit" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">修改</button>
+                                                    <button type="button" class="btn btn-default btn-sm procedures-del" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">删除</button>
+                                                    <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/processInfo.html?pid=<?php echo $list->id ?>'">添加索引</button>
+                                                <?php } else { ?>
+                                                    <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/processInfo.html?pid=<?php echo $list->id ?>'">查看索引</button>
+                                                <?php } ?>
                                             </td>
                                         </tr>
                                     <?php } ?>

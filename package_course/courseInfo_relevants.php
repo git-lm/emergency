@@ -15,12 +15,15 @@
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=groups&cid={cid}'"  type="button">小组分配</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=materials&cid={cid}'"  type="button">资源素材库</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=problems&cid={cid}'" type="button">事件叠加</button>
-                                <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=relevants&cid={cid}'" type="button">相关案例</button>
+                                <button data-toggle="button" class="right btn btn-primary btn-success col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=relevants&cid={cid}'" type="button">相关案例</button>
 
 
                             </div>
-                            <button data-toggle="button" class="right btn btn-primary btn-outline addrelevants" type="button" itemid="<?php echo $course_id ?>">新增相关案例</button>
-
+                            <?php
+                            if ($emer_users_info['type'] == 2) {
+                                ?>
+                                <button data-toggle="button" class="right btn btn-primary btn-outline addrelevants" type="button" itemid="<?php echo $course_id ?>">新增相关案例</button>
+                            <?php } ?>
 
                         </div>
                         <div class="table-responsive">
@@ -31,7 +34,11 @@
                                         <th>案例名称</th>
                                         <th>案例概述</th>
                                         <th>事件名称</th>
-                                        <th>操作</th>
+                                        <?php
+                                        if ($emer_users_info['type'] == 2) {
+                                            ?>
+                                            <th>操作</th>
+                                        <?php } ?>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,11 +50,15 @@
                                             <td><?php echo $list->title ?></td>
                                             <td><?php echo $list->summary ?></td>
                                             <td><a target="_blank" href="{base}<?php echo $list->event_url ?>"><?php echo $list->event_name ?></a></td>
-                                            <td>
-                                                <button type="button" class="btn btn-default btn-sm relevant-edit"  itemid="<?php echo $list->id ?>">修改</button>
-                                                <button type="button" class="btn btn-default btn-sm relevant-del"  itemid="<?php echo $list->id ?>">删除</button>
+                                            <?php
+                                            if ($emer_users_info['type'] == 2) {
+                                                ?>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-sm relevant-edit"  itemid="<?php echo $list->id ?>">修改</button>
+                                                    <button type="button" class="btn btn-default btn-sm relevant-del"  itemid="<?php echo $list->id ?>">删除</button>
 
-                                            </td>
+                                                </td>
+                                            <?php } ?>
                                         </tr>
                                     <?php } ?>
 

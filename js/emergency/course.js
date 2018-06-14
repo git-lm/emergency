@@ -66,6 +66,30 @@ $(function(){
     
     })
     
+    //精品推荐
+    $('.course-elite').click(function(){
+        var cid = $(this).attr('itemid');
+        var type = $(this).attr('itemtype');
+        if(type == 1){
+            var con = '您确定要推荐？';
+        }else{
+            var con = '您确定要取消推荐？';
+        }
+        layer.confirm(con, {
+            btn: ['确定', '后悔了'] //按钮
+        }, function () {
+            var index = layer.load(0, {
+                shade: [0.5, '#000'] //0.1透明度的白色背景
+            });
+            $.post(base + 'course/course_elite', {
+                'cid': cid,
+                'type':type
+            }, function (data) {
+                $.showMsg(data);
+            })
+        });
+    })
+    
     //新增教学流程
     $('.addprocedures').on('click',function(){
         var cid = $(this).attr('itemid');

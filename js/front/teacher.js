@@ -128,19 +128,19 @@ $(function () {
                     indexesHtml += '<li itemid="' + Indexes[i].id + '"><span class="time">' + (i * 1 + 1 * 1) + '、</span><p class="xinxi">' + Indexes[i].indexes + '：' + Indexes[i].injection + '</p></li>';
                 }
                 var html = '<div class="show_Ceng">'
-                        + '<div class="ceng"></div>'
-                        + '<div class="show_box show_box_number">'
-                        + '<div class="right2">'
-                        + '<div class="show_chats showinjection">'
-                        + '<ol class="there showIndexes">'
-                        + indexesHtml
-                        + '</ol>'
-                        + '<div class="show_list showContent">'
-                        + '</div>'
-                        + '</div>'
-                        + '</div>'
-                        + '</div>'
-                        + '</div>';
+                + '<div class="ceng"></div>'
+                + '<div class="show_box show_box_number">'
+                + '<div class="right2">'
+                + '<div class="show_chats showinjection">'
+                + '<ol class="there showIndexes">'
+                + indexesHtml
+                + '</ol>'
+                + '<div class="show_list showContent">'
+                + '</div>'
+                + '</div>'
+                + '</div>'
+                + '</div>'
+                + '</div>';
                 layer.open({
                     title: '资源展示',
                     type: 1,
@@ -163,7 +163,7 @@ $(function () {
                                         layer.closeAll();
                                         var visesHeight = $('.vises').height();
                                         var visesWidth = $('.vises').width();
-                                        //                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
+                                    //                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
 
                                     } else {
                                         layer.closeAll();
@@ -225,26 +225,26 @@ $(function () {
 
 
                 var html = '<div class="show_Ceng" >'
-                        + '<div class="ceng"></div>'
-                        + '<div class="show_box show_box_number">'
-                        + '<div class="right2">'
-                        + '<div class="show_chats show_chats_pl">'
-                        + '<ol class="ol_one there showEvent">'
-                        + eventHtml
-                        + '</ol>'
-                        + '<p class="choose">选择租</p>'
-                        + '<ol class="ol_one four showGroup">'
-                        + groupHtml
-                        + '</ol>'
-                        + '<p class="choose">小组情况</p>'
-                        + '<ol class="ol_one four showEventGroup showblock">'
-                        + data.eventgroup
-                        + '</ol>'
-                        + '</div>'
-                        + '</div>'
+                + '<div class="ceng"></div>'
+                + '<div class="show_box show_box_number">'
+                + '<div class="right2">'
+                + '<div class="show_chats show_chats_pl">'
+                + '<ol class="ol_one there showEvent">'
+                + eventHtml
+                + '</ol>'
+                + '<p class="choose">选择租</p>'
+                + '<ol class="ol_one four showGroup">'
+                + groupHtml
+                + '</ol>'
+                + '<p class="choose">小组情况</p>'
+                + '<ol class="ol_one four showEventGroup showblock">'
+                + data.eventgroup
+                + '</ol>'
+                + '</div>'
+                + '</div>'
 
-                        + '</div>'
-                        + '</div>';
+                + '</div>'
+                + '</div>';
                 layer.open({
                     title: '事件注入',
                     type: 1,
@@ -322,22 +322,22 @@ $(function () {
                 groupHtml += '<li itemid="' + data[i].id + '">' + data[i].name + '</li>';
             }
             var html = '<div class="show_Ceng">'
-                    + '<div class="ceng"></div>'
-                    + '<div class="show_box show_box_number">'
-                    + '<div class="right2">'
-                    + '<div class="show_chats show_chats_pl">'
-                    + '<p class="choose">选择租</p>'
-                    + '<ol class="ol_one four showProblemGroup">'
-                    + groupHtml
-                    + '</ol>'
-                    + '<p class="choose">问题选择</p>'
-                    + '<ol class="ol_one four showProblem showblock">'
+            + '<div class="ceng"></div>'
+            + '<div class="show_box show_box_number">'
+            + '<div class="right2">'
+            + '<div class="show_chats show_chats_pl">'
+            + '<p class="choose">选择租</p>'
+            + '<ol class="ol_one four showProblemGroup">'
+            + groupHtml
+            + '</ol>'
+            + '<p class="choose">问题选择</p>'
+            + '<ol class="ol_one four showProblem showblock">'
 
-                    + '</ol>'
-                    + '</div>'
-                    + '</div>'
-                    + '</div>'
-                    + '</div>';
+            + '</ol>'
+            + '</div>'
+            + '</div>'
+            + '</div>'
+            + '</div>';
             layer.open({
                 title: '问题分发',
                 type: 1,
@@ -427,31 +427,31 @@ $(function () {
                 groupHtml += '<li itemid="' + data[i].id + '">' + data[i].name + '</li>';
             }
             var html = '<div class="show_Ceng">'
-                    + '<div class="ceng"></div>'
-                    + '<div class="show_box show_box_number">'
-                    + '<div class="right2">'
-                    + '<div class="show_chats show_chats_pl">'
-                    + '<p class="choose">选择组</p>'
-                    + '<ol class="ol_one four showMaterialGroup">'
-                    + groupHtml
-                    + '</ol>'
-                    + '<p class="choose">素材类型</p>'
-                    + '<ol class="ol_one five showMaterialType">'
-                    + '<li itemtype="3">ppt</li>'
-                    + '<li itemtype="1">视频</li>'
-                    + '<li itemtype="4">文档</li>'
-                    + '<li itemtype="2">图片</li>'
-                    + '<li itemtype="5">其它素材</li>'
-                    + '</ol>'
-                    + '<p class="choose">选择素材区</p>'
-                    + '<ol class="ol_one four showMaterial">'
+            + '<div class="ceng"></div>'
+            + '<div class="show_box show_box_number">'
+            + '<div class="right2">'
+            + '<div class="show_chats show_chats_pl">'
+            + '<p class="choose">选择组</p>'
+            + '<ol class="ol_one four showMaterialGroup">'
+            + groupHtml
+            + '</ol>'
+            + '<p class="choose">素材类型</p>'
+            + '<ol class="ol_one five showMaterialType">'
+            + '<li itemtype="3">ppt</li>'
+            + '<li itemtype="1">视频</li>'
+            + '<li itemtype="4">文档</li>'
+            + '<li itemtype="2">图片</li>'
+            + '<li itemtype="5">其它素材</li>'
+            + '</ol>'
+            + '<p class="choose">选择素材区</p>'
+            + '<ol class="ol_one four showMaterial">'
 
-                    + '</ol>'
+            + '</ol>'
 
-                    + '</div>'
-                    + '</div>'
-                    + '</div>'
-                    + '</div>';
+            + '</div>'
+            + '</div>'
+            + '</div>'
+            + '</div>';
             layer.open({
                 title: '素材分发',
                 type: 1,
@@ -547,15 +547,15 @@ $(function () {
     //教学评估
     $('.assess').click(function () {
         var html = '<div class="show_Ceng" >'
-                + '<div class="ceng"></div>'
-                + '<div class="show_box show_box_number">'
-                + '<div class="right2">'
-                + '<div class="show_chats show_chats_pl">'
-                + '<textarea name="assess"></textarea>'
-                + '</div>'
-                + '</div>'
-                + '</div>'
-                + '</div>'
+        + '<div class="ceng"></div>'
+        + '<div class="show_box show_box_number">'
+        + '<div class="right2">'
+        + '<div class="show_chats show_chats_pl">'
+        + '<textarea name="assess"></textarea>'
+        + '</div>'
+        + '</div>'
+        + '</div>'
+        + '</div>'
         layer.open({
             title: '教学评估',
             type: 1,
@@ -588,7 +588,23 @@ $(function () {
             }
         });
     })
-
-
-
+    $('.teacherSend').click(function(){
+      
+        var content = $('textarea[name="teacherCon"]').val();
+        if(content !='' || content !=undefined){
+           
+            $.post(base +'metal/setMessages',{
+                'content':content
+            },function(data){
+                if(data.state == 'ok'){
+                    layer.msg(data.msg);
+                }else{
+                    layer.msg(data.msg);
+                }
+            },'json')
+        }
+     onSubmit(1,contnet)
+    })
+    //页面加载完成后加载scoket
+//    connect();
 })

@@ -20,8 +20,11 @@
                                     </div>
                                 </form>
                             </div>
-                            <button data-toggle="button" class="right btn btn-primary btn-outline course-add" type="button">新增课程</button>
-
+                            <?php
+                            if ($emer_users_info['type'] == 2) {
+                                ?>
+                                <button data-toggle="button" class="right btn btn-primary btn-outline course-add" type="button">新增课程</button>
+                            <?php } ?>
 
                         </div>
                         <div class="table-responsive">
@@ -48,7 +51,19 @@
                                                 if ($list->state == 2) {
                                                     ?>
                                                     <button type="button" class="btn btn-default btn-sm " onclick="window.location.href = '{base}course/courseInfo.html?cid=<?php echo $list->id ?>'">课程信息</button>
-                                                    <button type="button" class="btn btn-default btn-sm course-edit" itemid="<?php echo $list->id ?>">修改课程名称</button>
+                                                    <?php
+                                                    if ($emer_users_info['type'] == 2) {
+                                                        ?>
+                                                        <button type="button" class="btn btn-default btn-sm course-edit" itemid="<?php echo $list->id ?>">修改课程名称</button>
+                                                    <?php } else if ($emer_users_info['type'] == 1) { ?>
+                                                        <?php
+                                                        if ($list->iselite == 0) {
+                                                            ?>
+                                                            <button type="button" class="btn btn-default btn-sm course-elite" itemtype="1" itemid="<?php echo $list->id ?>">精品推荐</button>
+                                                        <?php } else { ?>
+                                                            <button type="button" class="btn btn-default btn-sm course-elite" itemtype="0" itemid="<?php echo $list->id ?>">取消推荐</button>
+                                                        <?php } ?>
+                                                    <?php } ?>
                                                 <?php } ?>
                                             </td>
                                         </tr>

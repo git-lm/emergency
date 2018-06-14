@@ -20,7 +20,7 @@ class Course extends CI_Controller {
         $this->now_time = date('Y-m-d H:i:s');
         $this->emer_users_info = $this->session->userdata('emer_users_info');
         if (!empty($this->emer_users_info)) {
-            $data['emer_users_info'] = $this->emer_users_info;
+            $this->data['emer_users_info'] = (Array) $this->emer_users_info;
         } else {
             header('Location:' . base_url());
             exit();
@@ -73,10 +73,13 @@ class Course extends CI_Controller {
         }
         $where = '';
         if (!empty($_GET) && !empty($_GET['title'])) {
-            $where = ' and title like "%' . $_GET['title'] . '%"';
+            $where .= ' and title like "%' . $_GET['title'] . '%"';
+        }
+        if ($this->emer_users_info->type == 2) {
+            $where .= 'and  u_id = ' . $this->emer_users_info->id;
         }
         $sql = 'select c.* ';
-        $from_where = '  from courses c   where c.state <> 3 and  u_id = ' . $this->emer_users_info->id;
+        $from_where = '  from courses c   where c.state <> 3 ' . $where;
         $limit = " order by  id desc  limit {$start},{$config['per_page']} ";
         $courses = $this->db->query($sql . $from_where . $limit)->result();
         $data['分页'] = $this->model_cmf->pages($from_where, $config);
@@ -149,14 +152,41 @@ class Course extends CI_Controller {
     }
 
     /*
+     * 精品推荐
+     * c_id
+     * type
+     */
+
+    public function course_elite() {
+        if (!empty($_POST['cid']) && isset($_POST['type'])) {
+            if ($_POST['type'] == 1) {
+                $item['iselite'] = 1;
+            } else {
+                $item['iselite'] = 0;
+            }
+            $where['id'] = $_POST['cid'];
+            $this->db->update('courses', $item, $where);
+            $arr['state'] = 'ok';
+            $arr['msg'] = '操作成功';
+        } else {
+            $arr['state'] = 'no';
+            $arr['msg'] = '推荐失败';
+        }
+        echo json_encode($arr);
+    }
+
+    /*
      * 修改课程更多信息   
      *      教学流程 
      */
 
     public function courseInfo() {
         if (!empty($_GET['cid'])) {
-
-            $sql = 'select * from courses where id = ' . $_GET['cid'] . ' and u_id = ' . $this->emer_users_info->id;
+            $where = '';
+            if ($this->emer_users_info->type == 2) {
+                $where .= 'and  u_id = ' . $this->emer_users_info->id;
+            }
+            $sql = 'select * from courses where id = ' . $_GET['cid'] . $where;
             $course = $this->db->query($sql)->row();
             if (!empty($course)) {
                 $data = lz_tag();
@@ -248,7 +278,11 @@ class Course extends CI_Controller {
 
     public function courseInfo_proceduresEdit() {
         if (!empty($_POST['title']) && !empty($_POST['cid']) && !empty($_POST['pid'])) {
-            $sql = 'select * from procedures p left join courses c on c.id = p.c_id where  c.u_id = ' . $this->emer_users_info->id . ' and p.id = ' . $_POST['pid'] . ' and c.id =   ' . $_POST['cid'];
+            $where = '';
+            if ($this->emer_users_info->type == 2) {
+                $where .= 'and  c.u_id = ' . $this->emer_users_info->id;
+            }
+            $sql = 'select * from procedures p left join courses c on c.id = p.c_id where   p.id = ' . $_POST['pid'] . ' and c.id =   ' . $_POST['cid'] . $where;
             $procedure = $this->db->query($sql)->row();
             if (!empty($procedure)) {
                 $item['title'] = $_POST['title'];
@@ -278,7 +312,11 @@ class Course extends CI_Controller {
 
     public function courseInfo_proceduresDel() {
         if (!empty($_POST['cid']) && !empty($_POST['pid'])) {
-            $sql = 'select * from procedures p left join courses c on c.id = p.c_id where  c.u_id = ' . $this->emer_users_info->id . ' and p.id = ' . $_POST['pid'] . ' and c.id =   ' . $_POST['cid'];
+            $where = '';
+            if ($this->emer_users_info->type == 2) {
+                $where .= 'and  c.u_id = ' . $this->emer_users_info->id;
+            }
+            $sql = 'select * from procedures p left join courses c on c.id = p.c_id where   p.id = ' . $_POST['pid'] . ' and c.id =   ' . $_POST['cid'] . $where;
             $procedure = $this->db->query($sql)->row();
             if (!empty($procedure)) {
                 try {

@@ -9,7 +9,8 @@
         <!--js-->
         <script type="text/javascript" src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/front/index.js"></script>
-        <script type="text/javascript" src="/js/front/student.js"></script>
+        <script src="/js/plugins/layer/layer.min.js"></script>
+
     </head>
     <script>
         var base = '{base}';
@@ -73,9 +74,9 @@
                 <!-- right_top -->
                 <div class="right_top right_top_student">
                     <ol>
-                        <li class="cur">相关案例</li>
-                        <li>事件案例</li>
-                        <li>素材展示</li>
+                        <li class="cur" >相关案例</li>
+                        <li class="">事件案例</li>
+                        <li class="">素材展示</li>
                     </ol>	
 
                     <ul>
@@ -199,6 +200,7 @@
                 </div>
             </div>
         </div>
-
+        <script type="text/javascript" src="/js/front/public.js"></script>
+        <script type="text/javascript" src="/js/front/student.js"></script>
     </body>
 </html>

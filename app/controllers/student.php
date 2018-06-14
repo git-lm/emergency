@@ -89,6 +89,23 @@ class Student extends CI_Controller {
         echo json_encode($groupCourse);
     }
 
+    /*
+     * 获取素材
+     * m_id 素材ID
+     */
+
+    public function getStudentMaterial() {
+        if (!empty($_POST['m_id'])) {
+            $material = $this->model_public->getMaterial($_POST['m_id']);
+            $resjson['state'] = 'ok';
+            $resjson['msg'] = $material;
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '获取失败';
+        }
+        echo json_encode($resjson);
+    }
+
 }
 
 ?>

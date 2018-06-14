@@ -20,23 +20,21 @@ $(function () {
             "password": password
           
         }, function (data) {
-            alert(data);
-            var obj = eval('('+data+')');
-            if (obj.state == "ok") {
+            if (data.state == "ok") {
                 window.location.href = base + 'metal.html';
               
-            } else if(obj.state == "no"){
+            } else if(data.state == "no"){
                 parent.layer.open({
-                    content: obj.msg
+                    content: data.msg
                 })
                 return false; 
             }else{
-                parent.layer.open({
+                layer.open({
                     content: '登录失败'
                 })
                 return false; 
             }
-        })
+        },'json')
 
     })
 

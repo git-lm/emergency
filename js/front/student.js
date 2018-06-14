@@ -29,7 +29,7 @@ $(function () {
         if (process != '') {
             var visesHeight = $('.vises').height();
             var visesWidth = $('.vises').width();
-//            $('.vises').html('<iframe height="' + visesHeight + '" width="' + visesWidth + '"  src="' + base + process.material + '"></iframe> ');
+        //            $('.vises').html('<iframe height="' + visesHeight + '" width="' + visesWidth + '"  src="' + base + process.material + '"></iframe> ');
         }
         //获取小组所有问题
         var problems = data.problems;
@@ -47,7 +47,7 @@ $(function () {
         var relevantsHtml = '';
         if (relevants != '') {
             for (var i = 0; i < relevants.length; i++) {
-                relevantsHtml += '<div itemid="' + relevants[i].id + '">' + relevants[i].title + '</div>';
+                relevantsHtml += '<div class="al" itemid="' + relevants[i].id + '">' + relevants[i].title + '</div>';
             }
         } else {
             relevantsHtml += '<div>无相关案例</div>';
@@ -58,7 +58,7 @@ $(function () {
         var eventsHtml = '';
         if (events != '') {
             for (var i = 0; i < events.length; i++) {
-                eventsHtml += '<div itemid="' + events[i].id + '">' + events[i].title + '</div>';
+                eventsHtml += '<div class="sj" itemid="' + events[i].id + '">' + events[i].title + '</div>';
             }
         } else {
             eventsHtml += '<div>无相关事件案例</div>';
@@ -69,12 +69,37 @@ $(function () {
         var materialsHtml = '';
         if (materials != '') {
             for (var i = 0; i < materials.length; i++) {
-                materialsHtml += '<div itemid="' + materials[i].id + '">' + materials[i].title + '</div>';
+                materialsHtml += '<div class="sc" itemid="' + materials[i].id + '">' + materials[i].title + '</div>';
             }
         } else {
             materialsHtml += '<div>无素材</div>';
         }
         $('.materials div').html(materialsHtml);
     }, 'json')
+    
+    
+    $(document).on('click' , 'div .sc' ,function(){
+        var m_id = $(this).attr('itemid');
+        $.post(base +'student/getStudentMaterial',{
+            'm_id':m_id
+        },function(data){
+            if(data.state == 'ok'){
+                layer.open({
+                    type: 2,
+                    title: false,
+                    area: ['630px', '360px'],
+                    shade: 0.8,
+                    closeBtn: 0,
+                    shadeClose: true,
+                    content: data.msg.url
+                });
+            }else{
+                layer.msg(data.msg);
+            }
+        },'json')
+    })
+    
+    //页面加载完成后加载scoket
+//    connect();
 })
 

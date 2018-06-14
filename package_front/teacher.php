@@ -111,8 +111,8 @@
                 </div>
                 <!-- chat_shi -->
                 <div class="chat_shi">
-                    <textarea placeholder="事件演练"></textarea>
-                    <button>发送</button>
+                    <textarea placeholder="事件演练" name="teacherCon"></textarea>
+                    <button class="teacherSend">发送</button>
                 </div>
             </div>
         </div>
@@ -232,6 +232,7 @@
             </div>
         </div>
 
+        <script type="text/javascript" src="{base}js/front/public.js"></script>
         <script type="text/javascript" src="{base}js/front/teacher.js"></script>
 
     </body>

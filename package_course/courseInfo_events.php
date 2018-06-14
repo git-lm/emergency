@@ -14,13 +14,16 @@
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=procedures&cid={cid}'"  type="button">教学流程</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=groups&cid={cid}'"  type="button">小组分配</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=materials&cid={cid}'"  type="button">资源素材库</button>
-                                <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=problems&cid={cid}'" type="button">事件叠加</button>
+                                <button data-toggle="button" class="right btn btn-primary btn-success col-sm-2 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=problems&cid={cid}'" type="button">事件叠加</button>
                                 <button data-toggle="button" class="right btn btn-primary btn-danger col-sm-1 course-info"  onclick="window.location.href='{base}course/courseInfo.html?type=relevants&cid={cid}'" type="button">相关案例</button>
 
 
                             </div>
-                            <button data-toggle="button" class="right btn btn-primary btn-outline addevents" type="button" itemid="<?php echo $course_id ?>">新增事件叠加</button>
-
+                            <?php
+                            if ($emer_users_info['type'] == 2) {
+                                ?>
+                                <button data-toggle="button" class="right btn btn-primary btn-outline addevents" type="button" itemid="<?php echo $course_id ?>">新增事件叠加</button>
+                            <?php } ?>
 
                         </div>
                         <div class="table-responsive">
@@ -40,9 +43,15 @@
                                             <td><?php echo $list->rownum ?></td>
                                             <td class="events-title"><?php echo $list->title ?></td>
                                             <td>
-                                                <button type="button" class="btn btn-default btn-sm events-edit"  itemid="<?php echo $list->id ?>">修改</button>
-                                                <button type="button" class="btn btn-default btn-sm events-del"  itemid="<?php echo $list->id ?>">删除</button>
-                                                <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/problemsInfo.html?eid=<?php echo $list->id ?>'">添加问题</button>
+                                                <?php
+                                                if ($emer_users_info['type'] == 2) {
+                                                    ?>
+                                                    <button type="button" class="btn btn-default btn-sm events-edit"  itemid="<?php echo $list->id ?>">修改</button>
+                                                    <button type="button" class="btn btn-default btn-sm events-del"  itemid="<?php echo $list->id ?>">删除</button>
+                                                    <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/problemsInfo.html?eid=<?php echo $list->id ?>'">添加问题</button>
+                                                <?php } else { ?>
+                                                    <button type="button" class="btn btn-default btn-sm" onclick="window.location.href='{base}course/problemsInfo.html?eid=<?php echo $list->id ?>'">查看问题</button>
+                                                <?php } ?>
 
                                             </td>
                                         </tr>
