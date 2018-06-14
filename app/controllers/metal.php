@@ -28,10 +28,7 @@ class Metal extends CI_Controller {
      */
 
     public function index() {
-        $data = lz_tag();
-        $data = array_merge($data, $this->data);
-       
-        $this->parser->parse(__FUNCTION__, $data);
+        phpinfo();
     }
 
 }
