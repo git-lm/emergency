@@ -1,3 +1,4 @@
+var t ;
 function formatSeconds(value) {
     var theTime = parseInt(value);// 秒
     var theTime1 = 0;// 分
@@ -19,30 +20,38 @@ function formatSeconds(value) {
     }
     $('.timing').text(result);
 
-    setTimeout('formatSeconds(' + value + '+1)', 1000);
+    t = setTimeout('formatSeconds(' + value + '+1)', 1000);
 
 }
 
-$(function () {
-    //获取教师课程
-    $.post(base + 'teacher/getTeacherPhoto', function (data) {
-        $('.top_nav img').attr('src', base + data)
-    })
+var beginCourse = function (){
+        
     //获取教师正在上课的课程
     $.post(base + 'teacher/getProcessCourse', function (data) {
 
         if (data != '') {
-            $('.dp').text('结束');
+            $('.dp').html('<span class="endCourse">结束</span>');
             $('.courseName').text(data.title);
             formatSeconds(data.time);
             //获取正在上课的所有流程
 
             var procedure = data.procedures;
-            var procedureHtml = '';
+            var procedureHtml = '<ul class="procedure">';
+                   
+                   
+            
             for (var i = 0; i < procedure.length; i++) {
                 procedureHtml += '<li itemid="' + procedure[i].id + '">' + procedure[i].title + '</li>';
             }
-            $('.procedure').html(procedureHtml);
+            procedureHtml +=' </ul>'
+            +'<ul class="procedureMenu">'
+            +'<li class="resource">资源展示</li>'
+            +'<li class="event">事件叠加</li>'
+            +'<li class="problem">问题分发</li>'
+            +'<li class="material">素材分发</li>'
+            +'<li class="assess">教学评估</li>'
+            +'</ul>';
+            $('.flow').html(procedureHtml);
             var group = data.groups;
             var groupHtml = '';
             //获取正在上课的小组
@@ -70,22 +79,103 @@ $(function () {
                 $('.vises').html('<iframe height="' + visesHeight + '" width="' + visesWidth + '"  src="' + base + process.material + '"></iframe> ');
             }
         } else {
-            $('.dp').text('开始');
+            $('.dp').html('<span class="beginCourse">开始</span>');
             $('.flow').html('等待选课');
             $('.lesson').html('等待选课');
             $('.courseName').text('等待选课');
         }
     }, 'json')
+}
+
+$(function () {
+    //获取教师课程
+    $.post(base + 'teacher/getTeacherPhoto', function (data) {
+        $('.top_nav img').attr('src', base + data)
+    })
+    
+    beginCourse();
+    
+   
 
 
     /*************************************分隔符   上部分刷新获取  下部分事件获取**********************************************************/
-    $('.procedureMenu li').click(function () {
+    //开始上课 选择课程
+    $(document).on('click','.dp .beginCourse',function(){
+       
+        $.post(base +'teacher/getCourse',function(data){
+            var courseHtml = '';
+            for (var i = 0; i < data.msg.length; i++) {
+                courseHtml += '<option value="'+data.msg[i].id+'">'+data.msg[i].title+'</option>';
+            }
+            var html = '<div class="col-md-12">'
+            +'<div class="form-group">'
+            +'<label class="col-sm-3 control-label">选择课程：</label>'
+            +'<div class="col-sm-9">'
+            +'<select class="form-control" name="c_id">'
+            +'<option value="">请选择课程</option>'
+            +courseHtml
+            +'</select>'
+            +'</div>'
+            +'</div>'
+            +'</div>';
+            layer.open({
+                title: '课程选择',
+                content: html,
+                btn: ['开始上课', '取消'],
+                yes: function (index, layero) {
+                    var c_id = $('select[name="c_id"]').val();
+                    alert(c_id == undefined )
+                    alert(c_id == '' )
+                    if(c_id != undefined && c_id != ''){
+                        $.post(base+'teacher/beginCourse',{
+                            'c_id':c_id
+                        },function(data){
+                            if(data.state =='ok'){
+                                layer.msg(data.msg);
+                                beginCourse();
+                            }else{
+                                layer.msg(data.msg);
+                            }
+                        },'json')
+                    }else{
+                        layer.msg('请选择要上课的课程');
+                    }
+
+                }
+            });
+        },'json')
+    })
+    
+    //结束上课
+    $(document).on('click','.dp .endCourse',function(){
+        layer.msg('确定下课', {
+            time: 20000, //20s后自动关闭
+            btn: ['确定', '再等会'],
+            yes: function (index) {
+                $.post(base + 'teacher/endCourse', function (data) {
+                    if (data.state == 'ok') {
+                        layer.msg(data.msg);
+                        $('.dp').html('<span>已结束</span>');
+                        clearTimeout(t) ;
+                    } else {
+                        layer.msg(data.msg);
+                    }
+                }, 'json')
+            }
+        });
+    })
+    
+    
+ 
+    
+    
+    $(document).on('click','.procedureMenu li',function () {
         $('.procedureMenu li').removeClass('cur');
         $(this).addClass('cur');
     })
 
     //开始教学流程
-    $('.procedure').on('click', 'li', function () {
+    $(document).on('click', '.procedure li', function () {
         var _this = $(this);
         var procedureName = $(this).text();
         var procedureId = $(this).attr('itemid');
@@ -116,7 +206,7 @@ $(function () {
         });
     })
     //点击资源展示显示内容
-    $('.resource').click(function () {
+    $(document).on('click', '.resource', function () {
         var prd_id = $('.purple').attr('itemid');
         $.post(base + 'teacher/getProceduresProcess', {
             'prd_id': prd_id
@@ -203,7 +293,7 @@ $(function () {
         }, 'json')
     })
     //点击事件叠加事件
-    $('.event').click(function () {
+    $(document).on('click', '.event', function () {
         var prd_id = $('.purple').attr('itemid');
         $.post(base + 'teacher/getEventGroup', {
             'prd_id': prd_id
@@ -313,70 +403,76 @@ $(function () {
 
 
     //问题分发
-    $('.problem').click(function () {
+    $(document).on('click', '.problem', function () {
         var prd_id = $('.purple').attr('itemid');
 
-        $.post(base + 'teacher/getProcessCourseGroup', function (data) {
-            var groupHtml = '';
-            for (var i = 0; i < data.length; i++) {
-                groupHtml += '<li itemid="' + data[i].id + '">' + data[i].name + '</li>';
-            }
-            var html = '<div class="show_Ceng">'
-            + '<div class="ceng"></div>'
-            + '<div class="show_box show_box_number">'
-            + '<div class="right2">'
-            + '<div class="show_chats show_chats_pl">'
-            + '<p class="choose">选择租</p>'
-            + '<ol class="ol_one four showProblemGroup">'
-            + groupHtml
-            + '</ol>'
-            + '<p class="choose">问题选择</p>'
-            + '<ol class="ol_one four showProblem showblock">'
-
-            + '</ol>'
-            + '</div>'
-            + '</div>'
-            + '</div>'
-            + '</div>';
-            layer.open({
-                title: '问题分发',
-                type: 1,
-                area: ['500px', '500px'], //宽高
-                closeBtn: 1,
-                content: html,
-                btn: ['分发', '取消'],
-                yes: function (index, layero) {
-                    var problem = new Array();
-                    var g_id = $('.showProblemGroup .cur').attr('itemid');
-
-                    $('.showProblem .cur').each(function () {
-                        problem.push($(this).attr('itemid'));
-                    })
-
-                    if (g_id == undefined) {
-                        layer.msg('请选择小组');
-                        return;
-                    }
-                    if (!$.isArray(problem) || problem.length == 0) {
-                        layer.msg('请选择分发的事件');
-                        return;
-                    }
-
-                    $.post(base + 'teacher/setGroupProblem', {
-                        'problem': problem,
-                        'g_id': g_id
-                    }, function (data) {
-                        if (data.state == 'ok') {
-                            layer.closeAll();
-                            layer.msg(data.msg);
-                        } else {
-                            layer.closeAll();
-                            layer.msg(data.msg);
-                        }
-                    }, 'json')
-
+        $.post(base + 'teacher/getCourseGroup', function (data) {
+            if(data.state == 'no'){
+                layer.msg(data.msg);
+            }else{
+                var groupHtml = '';
+                var groups = data.msg;
+                for (var i = 0; i < groups.length; i++) {
+                    groupHtml += '<li itemid="' + groups[i].id + '">' + groups[i].name + '</li>';
                 }
-            });
+                var html = '<div class="show_Ceng">'
+                + '<div class="ceng"></div>'
+                + '<div class="show_box show_box_number">'
+                + '<div class="right2">'
+                + '<div class="show_chats show_chats_pl">'
+                + '<p class="choose">选择租</p>'
+                + '<ol class="ol_one four showProblemGroup">'
+                + groupHtml
+                + '</ol>'
+                + '<p class="choose">问题选择</p>'
+                + '<ol class="ol_one four showProblem showblock">'
+
+                + '</ol>'
+                + '</div>'
+                + '</div>'
+                + '</div>'
+                + '</div>';
+                layer.open({
+                    title: '问题分发',
+                    type: 1,
+                    area: ['500px', '500px'], //宽高
+                    closeBtn: 1,
+                    content: html,
+                    btn: ['分发', '取消'],
+                    yes: function (index, layero) {
+                        var problem = new Array();
+                        var g_id = $('.showProblemGroup .cur').attr('itemid');
+
+                        $('.showProblem .cur').each(function () {
+                            problem.push($(this).attr('itemid'));
+                        })
+
+                        if (g_id == undefined) {
+                            layer.msg('请选择小组');
+                            return;
+                        }
+                        if (!$.isArray(problem) || problem.length == 0) {
+                            layer.msg('请选择分发的事件');
+                            return;
+                        }
+
+                        $.post(base + 'teacher/setGroupProblem', {
+                            'problem': problem,
+                            'g_id': g_id
+                        }, function (data) {
+                            if (data.state == 'ok') {
+                                layer.closeAll();
+                                layer.msg(data.msg);
+                            } else {
+                                layer.closeAll();
+                                layer.msg(data.msg);
+                            }
+                        }, 'json')
+
+                    }
+                });
+            }
+            
         }, 'json')
 
 
@@ -417,11 +513,11 @@ $(function () {
     })
 
 
-    //问题分发
-    $('.material').click(function () {
+    //素材分发
+    $(document).on('click', '.material', function () {
         var prd_id = $('.purple').attr('itemid');
 
-        $.post(base + 'teacher/getProcessCourseGroup', function (data) {
+        $.post(base + 'teacher/getCourseGroup', function (data) {
             var groupHtml = '';
             for (var i = 0; i < data.length; i++) {
                 groupHtml += '<li itemid="' + data[i].id + '">' + data[i].name + '</li>';
@@ -545,7 +641,7 @@ $(function () {
     })
 
     //教学评估
-    $('.assess').click(function () {
+    $(document).on('click', '.assess', function () {
         var html = '<div class="show_Ceng" >'
         + '<div class="ceng"></div>'
         + '<div class="show_box show_box_number">'
@@ -603,8 +699,8 @@ $(function () {
                 }
             },'json')
         }
-     onSubmit(1,contnet)
+        onSubmit(1,contnet)
     })
-    //页面加载完成后加载scoket
-//    connect();
+//页面加载完成后加载scoket
+connect();
 })

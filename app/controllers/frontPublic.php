@@ -17,6 +17,7 @@ class frontPublic extends CI_Controller {
         $this->load->model('model_cmf');
         $this->load->model('model_public');
         $this->load->model('uploads');
+        $this->load->library('wokerman/Events');
         $this->load->add_package_path(APPPATH . '../package_front', false);
         $this->now_time = date('Y-m-d H:i:s');
     }
@@ -40,6 +41,7 @@ class frontPublic extends CI_Controller {
             $resjson = $this->model_public->loginCheckTeacher($_POST);
             if ($resjson['state'] == 'ok') {
                 $this->session->set_userdata('emergerncyUserId', $resjson['msg']['id']);
+                
                 $resjson['state'] = 'ok';
                 $resjson['msg'] = '登录成功';
             } else {

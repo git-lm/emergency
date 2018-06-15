@@ -29,18 +29,7 @@
 
                 <p class="lct">教学流程图</p>
                 <div class='flow'>
-                    <ul class="procedure">
-                        &nbsp;
-                    </ul>
-                    <ul class="procedureMenu">
-
-                        <li class="resource">资源展示</li>
-                        <li class="event">事件叠加</li>
-                        <li class="problem">问题分发</li>
-                        <li class="material">素材分发</li>
-                        <li class="assess">教学评估</li>
-
-                    </ul>
+                    
                 </div>
             </div>
 

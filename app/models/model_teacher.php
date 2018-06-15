@@ -12,6 +12,47 @@
  */
 class model_teacher extends CI_Model {
     /*
+     * 获取教师所有课程
+     * 
+     */
+
+    public function getCourse($param) {
+        $course = $this->db->get_where('courses', $param)->result();
+        return $course;
+    }
+
+    /*
+     * 开始上课
+     * c_id
+     */
+
+    public function beginCourse($c_id = 0) {
+        $sql = 'update courses set state = 2 where id = ' . $c_id;
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    /*
+     * 开始上课
+     * c_id
+     */
+
+    public function endCourse($c_id = 0) {
+        $sql = 'update courses set state = 3 where id = ' . $c_id;
+        $this->db->query($sql);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /*
      * 获取教师正在上课的课程
      * uid 教师ID
      */

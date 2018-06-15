@@ -100,6 +100,6 @@ $(function () {
     })
     
     //页面加载完成后加载scoket
-//    connect();
+    connect();
 })
 
