@@ -12,6 +12,38 @@
  */
 class model_public extends CI_Model {
     /*
+     * 获取users 信息
+     * u_id 
+     */
+
+    public function getUser($u_id = 0) {
+        $sql = 'select * from users where id = ' . $u_id;
+        $user = $this->db->query($sql)->row();
+        return $user;
+    }
+
+    /*
+     * 获取小组信息
+     * g_id 
+     */
+
+    public function getGroup($g_id = 0) {
+        $sql = 'select * from groups where id = ' . $g_id;
+        $group = $this->db->query($sql)->row();
+        return $group;
+    }
+
+    /*
+     * 获取所有小组信息
+     * g_id 
+     */
+
+    public function getGroups($param) {
+        $groups = $this->db->get_where('groups', $param)->result();
+        return $groups;
+    }
+
+    /*
      * 验证教师登录信息
      */
 
@@ -129,7 +161,7 @@ class model_public extends CI_Model {
 
     public function getMaterial($m_id = 0) {
         $sql = 'select * from materials where id = ' . $m_id;
-        $material = $this->db->query($sql)->row_array();
+        $material = $this->db->query($sql)->row();
         return $material;
     }
 
@@ -146,22 +178,71 @@ class model_public extends CI_Model {
             return true;
         }
     }
-    
+
     /*
      * 获取发送后前端接收的信息
      * g_id  小组ID 有小组ID 就是获取小组名称
      * u_id  教师ID 有教师ID 就是获取教师名称
      * cr_id 聊天记录ID 有聊天记录就是获取聊天记录信息
      */
-    public function  getMessage($g_id = 0 , $u_id = 0 , $cr_id = 0){
-        
-        if(!empty($cr_id)){
-            if(!empty($g_id)){
-                $sql = 'select * from groups where id = '.$g_id;
+
+    public function getMessage($g_id = 0, $u_id = 0, $cr_id = 0) {
+
+        if (!empty($cr_id)) {
+            if (!empty($g_id)) {
+                $sql = 'select * from groups where id = ' . $g_id;
                 $group = $this->db->query($sql)->row();
             }
-        }else{
+        } else {
             return '';
+        }
+    }
+
+    /*
+     * 获取问题
+     * param
+     */
+
+    public function getProblems($param) {
+        $problems = $this->db->get_where('problems', $param)->result();
+        return $problems;
+    }
+
+    /*
+     * 获取单个问题
+     * param
+     */
+
+    public function getProblem($p_id = 0) {
+        $sql = 'select * from problems where id = ' . $p_id;
+        $problem = $this->db->query($sql)->row();
+        return $problem;
+    }
+
+    /*
+     * 获取所有发言
+     * c_id 小组ID
+     */
+
+    public function getChats($param, $order = '') {
+        if (!empty($order)) {
+            $this->db->order_by($order);
+        }
+        $record_chat = $this->db->get_where('record_chat', $param)->result();
+        return $record_chat;
+    }
+
+    /*
+     * 保存评论
+     */
+
+    public function setReview($param) {
+        $this->db->insert('review', $param);
+        $rows = $this->db->affected_rows();
+        if ($rows == 0) {
+            return false;
+        } else {
+            return true;
         }
     }
 

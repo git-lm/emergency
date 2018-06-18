@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>健身房系统</title>
-        <meta name="keywords" content="健身房系统">
-        <meta name="description" content="健身房系统">
+        <title>应急模拟演练实训系统</title>
+        <meta name="keywords" content="应急模拟演练实训系统">
+        <meta name="description" content="应急模拟演练实训系统">
 
         <link rel="shortcut icon" href="favicon.ico"> <link href="{base}css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
         <link href="{base}css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
@@ -28,7 +28,7 @@
             }
         </script>
     </head>
-   
+
     <body class="gray-bg">
 
         <div class="middle-box text-center loginscreen  animated fadeInDown">
@@ -37,8 +37,8 @@
                     <h1 class="logo-name">F</h1>
 
                 </div>
-                <h3>欢迎使用 健身房系统</h3>
-                
+                <h3>应急模拟演练实训系统</h3>
+
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="用户名"  name="username" >
                 </div>

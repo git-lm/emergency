@@ -20,7 +20,7 @@
 
                             </div>
                             <?php
-                            if ($emer_users_info['type'] == 2) {
+                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                 ?>
                                 <button data-toggle="button" class="right btn btn-primary btn-outline addgroups" type="button" itemid="<?php echo $course_id ?>">新增小组</button>
 
@@ -35,7 +35,7 @@
                                         <th>小组账号</th>
                                         <th>小组密码</th>
                                         <?php
-                                        if ($emer_users_info['type'] == 2) {
+                                        if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                             ?>
                                             <th>操作</th>
                                         <?php } ?>
@@ -51,7 +51,7 @@
                                             <td class="group-username"><?php echo $list->username ?></td>
                                             <td class="group-password"><?php echo $list->password ?></td>
                                             <?php
-                                            if ($emer_users_info['type'] == 2) {
+                                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                                 ?>
                                                 <td>
                                                     <button type="button" class="btn btn-default btn-sm groups-edit"  itemid="<?php echo $list->id ?>">修改</button>

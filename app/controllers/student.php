@@ -22,8 +22,7 @@ class Student extends CI_Controller {
         $this->now_time = date('Y-m-d H:i:s');
         $emergerncyGroupId = $this->session->userdata('emergerncyGroupId');
         if (!empty($emergerncyGroupId)) {
-            $sql = 'select * from groups where id = ' . $emergerncyGroupId;
-            $this->emergerncyGroup = $this->db->query($sql)->row();
+            $this->emergerncyGroup = $this->model_public->getGroup($emergerncyGroupId);
             if (empty($this->emergerncyGroup)) {
                 header('Location:' . base_url() . 'frontPublic/loginGroup');
                 return;
@@ -49,7 +48,7 @@ class Student extends CI_Controller {
      */
 
     public function getGroup() {
-        $group = $this->model_student->getGroup($this->emergerncyGroup->id);
+        $group = $this->model_public->getGroup($this->emergerncyGroup->id);
         return $group;
     }
 
@@ -86,6 +85,26 @@ class Student extends CI_Controller {
         //获取小组的所有相关素材
         $materials = $this->model_student->getGroupMaterials($this->emergerncyGroup->id, $record_procedures->prd_id, $course['id']);
         $groupCourse->materials = $materials;
+        //获取课程下所有小组
+        $cItem['c_id'] = $group->c_id;
+        $groups = $this->model_public->getGroups($cItem);
+        $groupCourse->groups = $groups;
+        //获取所有发言信息
+        $cItem['type'] = 1;
+        $chats = $this->model_public->getChats($cItem, 'id desc');
+        foreach ($chats as $val) {
+            if ($val->source == 2 && $val->u_id == $this->emergerncyGroup->id) {
+                $val->className = 'R_chat';
+            } else {
+                $val->className = 'L_chat';
+            }
+            if ($val->source == 1) {
+                $val->name = $this->model_public->getUser($val->u_id)->name;
+            } else {
+                $val->name = $this->model_public->getGroup($val->u_id)->name;
+            }
+        }
+        $groupCourse->chats = $chats;
         echo json_encode($groupCourse);
     }
 
@@ -106,6 +125,75 @@ class Student extends CI_Controller {
         echo json_encode($resjson);
     }
 
+    /*
+     * 查看各小组
+     */
+
+    public function getCourseGroup() {
+        $group = $this->getGroup();
+        if (!empty($group)) {
+            $cItem['c_id'] = $group->c_id;
+            $groups = $this->model_public->getGroups($cItem);
+            $resjson['state'] = 'ok';
+            $resjson['msg'] = $groups;
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '获取小组失败';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 查看教学流程索引
+     */
+
+    public function getProcess() {
+        //获取小组所在的课程
+        $course = $this->model_public->getGroupCourse($this->emergerncyGroup->id);
+        if (!empty($course)) {
+            //获取正在上课的流程ID
+            $record_procedures = $this->model_public->getProcessProcedures($course['id']);
+            //获取正在上课的所有流程事件
+            $process = $this->model_public->getProceduresProcess($record_procedures->prd_id);
+            $resjson['state'] = 'ok';
+            $resjson['msg'] = $process;
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '暂无课程';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 评论点评
+     * g_id  被评论人
+     * content 评论内容
+     */
+
+    public function setReview() {
+        if (isset($_POST['g_id']) && !empty($_POST['content'])) {
+            $item['c_id'] = $this->getGroup()->c_id;
+            $item['u_id'] = $this->emergerncyGroup->id;
+            $item['to_u_id'] = $_POST['g_id'];
+            $item['content'] = $_POST['content'];
+            $item['source'] = 2;
+            $item['add_time'] = $this->now_time;
+            $req = $this->model_public->setReview($item);
+            if ($req) {
+                $resjson['state'] = 'ok';
+                $resjson['msg'] = '评论成功';
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = '评论失败2';
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '评论失败1';
+        }
+        echo json_encode($resjson);
+    }
+
+    //
 }
 
 ?>

@@ -25,12 +25,15 @@ function formatSeconds(value) {
 }
 
 var beginCourse = function (){
-        
+    var index = layer.load(1,{
+        shade: [0.5,'#000']
+    })
     //获取教师正在上课的课程
     $.post(base + 'teacher/getProcessCourse', function (data) {
 
         if (data != '') {
             $('.dp').html('<span class="endCourse">结束</span>');
+            $('.dp').addClass('endCourse');
             $('.courseName').text(data.title);
             formatSeconds(data.time);
             //获取正在上课的所有流程
@@ -56,13 +59,20 @@ var beginCourse = function (){
             var groupHtml = '';
             //获取正在上课的小组
             for (var i = 0; i < group.length; i++) {
-                groupHtml += '<span>' + group[i].name + '</span>';
+                groupHtml += '<span class="'+ group[i].id+'">' + group[i].name + '</span>';
             }
             $('.lesson').html(groupHtml);
+            var groupHtml = '<li itemid="0">所有人</li>';
+            for (var i = 0; i < group.length; i++) {
+                groupHtml += '<li itemid="'+group[i].id +'">' + group[i].name + '</li>';
+            }
+            $('.man_list ul').html(groupHtml);
+            
+            
             //获取正在上课的流程的事件  上课流程的所有事件
             var prd_id = data.prd_id;
             var processAll = data.processAll;
-            var qusHtml = '';
+            var qusHtml ='';
             for (var i = 0; i < processAll.length; i++) {
                 qusHtml += '<li><a href="javascript:;">' + processAll[i].indexes + '</a></li>';
             }
@@ -78,11 +88,25 @@ var beginCourse = function (){
                 var visesWidth = $('.vises').width();
                 $('.vises').html('<iframe height="' + visesHeight + '" width="' + visesWidth + '"  src="' + base + process.material + '"></iframe> ');
             }
+            //获取所有发言的信息
+            var chats = data.chats;
+            var chatHtml = '';
+            if (chats != '') {
+                for (var i = 0; i < chats.length; i++) {
+                    chatHtml += ' <div class="'+chats[i].className+' chat">'
+                    +'<span class="mc">'+chats[i].name+'</span><br />'+chats[i].content+''
+                    +'</div>';
+                }
+                $('.show_chat').html(chatHtml);
+            }
+            layer.close(index); 
         } else {
             $('.dp').html('<span class="beginCourse">开始</span>');
+            $('.dp').addClass('beginCourse');
             $('.flow').html('等待选课');
             $('.lesson').html('等待选课');
             $('.courseName').text('等待选课');
+            layer.close(index); 
         }
     }, 'json')
 }
@@ -100,9 +124,12 @@ $(function () {
 
     /*************************************分隔符   上部分刷新获取  下部分事件获取**********************************************************/
     //开始上课 选择课程
-    $(document).on('click','.dp .beginCourse',function(){
-       
+    $(document).on('click',' .beginCourse',function(){
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base +'teacher/getCourse',function(data){
+            layer.close(index); 
             var courseHtml = '';
             for (var i = 0; i < data.msg.length; i++) {
                 courseHtml += '<option value="'+data.msg[i].id+'">'+data.msg[i].title+'</option>';
@@ -127,11 +154,16 @@ $(function () {
                     alert(c_id == undefined )
                     alert(c_id == '' )
                     if(c_id != undefined && c_id != ''){
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $.post(base+'teacher/beginCourse',{
                             'c_id':c_id
                         },function(data){
+                            layer.close(index); 
                             if(data.state =='ok'){
                                 layer.msg(data.msg);
+                                //加入组
                                 beginCourse();
                             }else{
                                 layer.msg(data.msg);
@@ -152,7 +184,11 @@ $(function () {
             time: 20000, //20s后自动关闭
             btn: ['确定', '再等会'],
             yes: function (index) {
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base + 'teacher/endCourse', function (data) {
+                    layer.close(index); 
                     if (data.state == 'ok') {
                         layer.msg(data.msg);
                         $('.dp').html('<span>已结束</span>');
@@ -183,10 +219,15 @@ $(function () {
             time: 20000, //20s后自动关闭
             btn: ['确定', '再等会'],
             yes: function (index) {
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base + 'teacher/setProcedure', {
                     'procedureId': procedureId
                 }, function (data) {
+                    layer.close(index); 
                     if (data.state == 'ok') {
+                        
                         var process = data.msg;
                         var qusHtml = '';
                         for (var i = 0; i < process.length; i++) {
@@ -208,9 +249,13 @@ $(function () {
     //点击资源展示显示内容
     $(document).on('click', '.resource', function () {
         var prd_id = $('.purple').attr('itemid');
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getProceduresProcess', {
             'prd_id': prd_id
         }, function (data) {
+            layer.close(index); 
             if (data.state == 'ok') {
                 var Indexes = data.msg;
                 var indexesHtml = '';
@@ -245,15 +290,18 @@ $(function () {
                             layer.confirm('您确定选择' + p_name + '上屏？', {
                                 btn: ['确定', '后悔了'] //按钮
                             }, function () {
-
+                                var index = layer.load(1,{
+                                    shade: [0.5,'#000']
+                                })
                                 $.post(base + 'teacher/setProcess', {
                                     'p_id': p_id
                                 }, function (data) {
+                                    layer.close(index); 
                                     if (data.state == 'ok') {
                                         layer.closeAll();
                                         var visesHeight = $('.vises').height();
                                         var visesWidth = $('.vises').width();
-                                    //                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
+                                        $('.vises').html('<iframe height="'+visesHeight+'" width="'+visesWidth+'"  src="'+base+data.msg.material+'"></iframe> ');
 
                                     } else {
                                         layer.closeAll();
@@ -282,9 +330,13 @@ $(function () {
         var _this = $(this);
         _this.addClass('cur');
         var p_id = $(this).attr('itemid');
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getProcess', {
             'p_id': p_id
         }, function (data) {
+            layer.close(index); 
             if (data.state == 'ok') {
                 _this.parent().parent().find('.showContent').html('<div class="list">' + data.msg.material_name + '</div>');
             } else {
@@ -295,10 +347,13 @@ $(function () {
     //点击事件叠加事件
     $(document).on('click', '.event', function () {
         var prd_id = $('.purple').attr('itemid');
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getEventGroup', {
             'prd_id': prd_id
         }, function (data) {
-
+            layer.close(index); 
             if (data.state == 'ok') {
 
                 var group = data.group;
@@ -360,11 +415,14 @@ $(function () {
                             layer.msg('请选择注入的小组');
                             return;
                         }
-
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $.post(base + 'teacher/setEventGroup', {
                             'event': event,
                             'group': group
                         }, function (data) {
+                            layer.close(index); 
                             if (data.state == 'ok') {
                                 layer.closeAll();
                                 layer.msg(data.msg);
@@ -405,16 +463,21 @@ $(function () {
     //问题分发
     $(document).on('click', '.problem', function () {
         var prd_id = $('.purple').attr('itemid');
-
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getCourseGroup', function (data) {
+            layer.close(index); 
             if(data.state == 'no'){
                 layer.msg(data.msg);
             }else{
                 var groupHtml = '';
+               
                 var groups = data.msg;
                 for (var i = 0; i < groups.length; i++) {
                     groupHtml += '<li itemid="' + groups[i].id + '">' + groups[i].name + '</li>';
                 }
+                
                 var html = '<div class="show_Ceng">'
                 + '<div class="ceng"></div>'
                 + '<div class="show_box show_box_number">'
@@ -455,11 +518,14 @@ $(function () {
                             layer.msg('请选择分发的事件');
                             return;
                         }
-
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $.post(base + 'teacher/setGroupProblem', {
                             'problem': problem,
                             'g_id': g_id
                         }, function (data) {
+                            layer.close(index); 
                             if (data.state == 'ok') {
                                 layer.closeAll();
                                 layer.msg(data.msg);
@@ -478,7 +544,7 @@ $(function () {
 
     })
 
-    //获取小组已经注入的事件
+    //获取小组已经注入的事件的所有
     $(document).on('click', '.showProblemGroup li', function () {
         $('.showProblemGroup li').removeClass('cur');
         $(this).addClass('cur');
@@ -486,16 +552,20 @@ $(function () {
         if (g_id == undefined || g_id == '') {
             return;
         }
-        $.post(base + 'teacher/getGroupEvents', {
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
+        $.post(base + 'teacher/getGroupEventsProblem', {
             'g_id': g_id
         }, function (data) {
+            layer.close(index); 
             if (data.state == 'ok') {
-                var events = data.msg;
-                var eventHtml = '';
-                for (var i = 0; i < events.length; i++) {
-                    eventHtml += '<li itemid="' + events[i].id + '">' + events[i].title + '</li>';
+                var eventPronlems = data.msg;
+                var eventPronlemsHtml = '';
+                for (var i = 0; i < eventPronlems.length; i++) {
+                    eventPronlemsHtml += '<li itemid="' + eventPronlems[i].id + '">' + eventPronlems[i].title + '</li>';
                 }
-                $('.showProblem').html(eventHtml);
+                $('.showProblem').html(eventPronlemsHtml);
             } else {
                 layer.msg(data.msg);
             }
@@ -516,11 +586,15 @@ $(function () {
     //素材分发
     $(document).on('click', '.material', function () {
         var prd_id = $('.purple').attr('itemid');
-
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getCourseGroup', function (data) {
+            layer.close(index); 
             var groupHtml = '';
-            for (var i = 0; i < data.length; i++) {
-                groupHtml += '<li itemid="' + data[i].id + '">' + data[i].name + '</li>';
+            var groups = data.msg;
+            for (var i = 0; i < groups.length; i++) {
+                groupHtml += '<li itemid="' + groups[i].id + '">' + groups[i].name + '</li>';
             }
             var html = '<div class="show_Ceng">'
             + '<div class="ceng"></div>'
@@ -573,11 +647,15 @@ $(function () {
                         layer.msg('请选择素材');
                         return;
                     }
+                    var index = layer.load(1,{
+                        shade: [0.5,'#000']
+                    })
                     $.post(base + 'teacher/setGroupMaterial', {
                         'type': type,
                         'g_id': g_id,
                         'm_id': m_id
                     }, function (data) {
+                        layer.close(index); 
                         if (data.state == 'ok') {
                             layer.closeAll();
                             layer.msg(data.msg);
@@ -613,9 +691,13 @@ $(function () {
         if (type == '' || type == undefined) {
             return;
         }
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'teacher/getCourseMaterial', {
             'type': type
         }, function (data) {
+            layer.close(index); 
             if (data.state == 'ok') {
                 var material = data.msg;
                 var materialHtml = '';
@@ -668,10 +750,13 @@ $(function () {
                     layer.msg('请填写评估内容');
                     return;
                 }
-
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base + 'teacher/setProcesslAssess', {
                     'assess': assess
                 }, function (data) {
+                    layer.close(index); 
                     if (data.state == 'ok') {
                         layer.closeAll();
                         layer.msg(data.msg);
@@ -684,23 +769,52 @@ $(function () {
             }
         });
     })
-    $('.teacherSend').click(function(){
-      
-        var content = $('textarea[name="teacherCon"]').val();
-        if(content !='' || content !=undefined){
-           
-            $.post(base +'metal/setMessages',{
-                'content':content
-            },function(data){
-                if(data.state == 'ok'){
-                    layer.msg(data.msg);
-                }else{
-                    layer.msg(data.msg);
+    //查看各小组观点
+    $('.checkGroupChat').click(function(){
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
+        $.post(base +'teacher/getCourseGroup',function(data){
+            layer.close(index); 
+            if(data.state =='ok'){
+                var groupHtml = '';
+                var groups = data.msg;
+                for (var i = 0; i < groups.length; i++) {
+                    groupHtml += '<li itemid="' + groups[i].id + '">' + groups[i].name + '</li>';
                 }
-            },'json')
-        }
-        onSubmit(1,contnet)
+                var html = '<div class="show_Ceng">'
+                +'<div class="ceng"></div>'
+                +'<div class="show_box">'
+                +'<div class="left">'
+                +'<ul class="showGroupChat">'
+                +groupHtml
+                +'</ul>'
+                +'</div>'
+                +'<div class="right2">'
+                +'<div class="show_chats">'
+                +'<textarea name="groupChat"></textarea>'
+                +'</div>'
+                +'</div>'
+                +'</div>'
+                +'</div>';
+                layer.open({
+                    title: '查看各小组观点',
+                    type: 1,
+                    content: html,
+                    area: ['800px', '500px'],
+                    btn: ['确定'],
+                    yes:function(){
+                        layer.closeAll();
+                    }
+                });
+            }else{
+                layer.msg(data.msg);
+            }
+        
+        },'json')
+    
     })
+    
 //页面加载完成后加载scoket
-connect();
+   
 })

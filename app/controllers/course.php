@@ -37,14 +37,18 @@ class Course extends CI_Controller {
         $config['per_page'] = 10;
         $config['uri_segment'] = 3;
         $config['base_url'] = base_url() . 'course/eliteList.html';
+        $where = '';
         if (!empty($_GET['start'])) {
             $start = $_GET['start'];
         } else {
             $start = 0;
         }
+        if (!empty($_GET['title'])) {
+            $where = ' and title like "%' . $_GET['title'] . '%"';
+        }
 //        $sql = 'select * from courses where state = 2 and iselite = 1 ';
         $sql = 'select c.*,u.name uname ';
-        $from_where = '  from courses c left join users u on u.id = c.u_id    where c.state = 2 and c.iselite = 1  ';
+        $from_where = '  from courses c left join users u on u.id = c.u_id    where c.state = 3 and c.iselite = 1  ' . $where;
         $limit = " order by  id desc  limit {$start},{$config['per_page']} ";
         $courses = $this->db->query($sql . $from_where . $limit)->result();
         $data['分页'] = $this->model_cmf->pages($from_where, $config);
@@ -52,7 +56,97 @@ class Course extends CI_Controller {
             $course->rownum = $key + 1;
         }
         $data['lists'] = $courses;
+        $data['search'] = $_GET;
         $this->parser->parse(__FUNCTION__, $data);
+    }
+
+    /*
+     * 查看课程日志
+     */
+
+    public function courseLog() {
+        if (!empty($_GET['c_id'])) {
+            $data = lz_tag();
+            $data = array_merge($data, $this->data);
+            $config['per_page'] = 10;
+            $config['uri_segment'] = 3;
+            $config['base_url'] = base_url() . 'course/courseLog.html?c_id=' . $_GET['c_id'];
+            if (!empty($_GET['start'])) {
+                $start = $_GET['start'];
+            } else {
+                $start = 0;
+            }
+            $sql = "select * ";
+            $from_where = " from (
+                        select type , c_id , u_id , to_u_id , source , content , add_time   from record_chat rc 
+                        UNION ALL
+                        select 11 type , re.c_id , c.u_id , g_id to_u_id , 1 source , CONCAT_WS(',','分发',prd.title , e.title) content , re.add_time    from record_events  re left join events e on e.id = re.e_id left join procedures prd on prd.id = re.prd_id left join courses c on c.id = re.c_id
+                        UNION ALL
+                        select 12 type , rm.c_id , c.u_id , g_id to_u_id , 1 source , CONCAT_WS(',','分发',prd.title , m.name , m.title ) content , rm.add_time   from record_materials rm left join courses c on c.id = rm.c_id left join procedures prd on prd.id = rm.prd_id LEFT JOIN materials m on m.id = rm.m_id 
+                        UNION ALL
+                        select 13 type , rpb.c_id , c.u_id , rpb.g_id to_u_id , 1 source , CONCAT_WS(',','分发',prd.title , e.title , pb.title) content , rpb.add_time from record_problems rpb left join courses c on c.id = rpb.c_id left join procedures prd on prd.id = rpb.prd_id left join problems pb on pb.id = rpb.pb_id left join events e on e.id = pb.e_id 
+                        UNION ALL
+                        select 14 type , rpd.c_id , c.u_id , 0 to_u_id , 1 source , CONCAT_WS(',','开始',prd.title ) content , rpd.begin_time add_time from record_procedures rpd left join courses c on c.id = rpd.c_id LEFT JOIN procedures prd on prd.id = rpd.prd_id 
+                        UNION ALL
+                        select 15 type , rp.c_id , c.u_id , 0 to_u_id , 1 source , CONCAT_WS( ',','上屏' , pc.indexes , pc.injection ) content , rp.add_time from record_process rp left join courses c on c.id = rp.c_id left join process pc on pc.id = rp.pc_id
+                        UNION ALL 
+                        select 16 type , rev.c_id  ,c.u_id , g_id to_u_id , 1 source , CONCAT_WS(',','分发', r.title) content , rev.add_time from record_relevants rev LEFT JOIN courses c on c.id = rev.c_id left join procedures prd on prd.id = rev.prd_id left join relevants r on r.id = rev.r_id 
+                        ) t where c_id =   " . $_GET['c_id'];
+            $limit = " ORDER BY t.add_time desc   limit {$start},{$config['per_page']} ";
+            $logs = $this->db->query($sql . $from_where . $limit)->result();
+            $data['分页'] = $this->model_cmf->pages($from_where, $config);
+            foreach ($logs as $key => $log) {
+                $log->rownum = $key + 1;
+                //获取去方
+                if (empty($log->to_u_id)) {
+                    $log->to_name = '全体';
+                } else {
+                    if ($log->source == 1) {
+                        $sql = 'select * from groups where id = ' . $log->to_u_id;
+                        $group = $this->db->query($sql)->row();
+                        $log->to_name = $group->name;
+                    } else {
+                        $sql = 'select * from users where id = ' . $log->to_u_id;
+                        $user = $this->db->query($sql)->row();
+                        $log->to_name = $user->name;
+                    }
+                }
+                //获取来方
+                if ($log->source == 1) {
+                    $sql = 'select * from users where id = ' . $log->u_id;
+                    $user = $this->db->query($sql)->row();
+                    $log->from_name = $user->name;
+                } else {
+
+                    $sql = 'select * from groups where id = ' . $log->u_id;
+                    $group = $this->db->query($sql)->row();
+                    $log->from_name = $group->name;
+                }
+                //获取类型
+                if ($log->type == 1) {
+                    $log->type_name = '信息';
+                } else if ($log->type == 2) {
+                    $log->type_name = '登录';
+                } else if ($log->type == 2) {
+                    $log->type_name = '退出';
+                } else if ($log->type == 11) {
+                    $log->type_name = '事件叠加记录';
+                } else if ($log->type == 12) {
+                    $log->type_name = '小组分发素材记录';
+                } else if ($log->type == 13) {
+                    $log->type_name = '小组事件分发问题';
+                } else if ($log->type == 14) {
+                    $log->type_name = '教学流程记录';
+                } else if ($log->type == 15) {
+                    $log->type_name = '流程事件记录';
+                } else if ($log->type == 16) {
+                    $log->type_name = '小组课程案例记录';
+                }
+            }
+            $data['lists'] = $logs;
+            $data['search'] = $_GET;
+            $this->parser->parse(__FUNCTION__, $data);
+        }
     }
 
     /*
@@ -76,10 +170,10 @@ class Course extends CI_Controller {
             $where .= ' and title like "%' . $_GET['title'] . '%"';
         }
         if ($this->emer_users_info->type == 2) {
-            $where .= 'and  u_id = ' . $this->emer_users_info->id;
+            $where .= ' and  u_id = ' . $this->emer_users_info->id;
         }
         $sql = 'select c.* ';
-        $from_where = '  from courses c   where c.state <> 3 ' . $where;
+        $from_where = '  from courses c   where c.state <> 4 ' . $where;
         $limit = " order by  id desc  limit {$start},{$config['per_page']} ";
         $courses = $this->db->query($sql . $from_where . $limit)->result();
         $data['分页'] = $this->model_cmf->pages($from_where, $config);
@@ -87,6 +181,7 @@ class Course extends CI_Controller {
             $course->rownum = $key + 1;
         }
         $data['lists'] = $courses;
+        $data['search'] = $_GET;
         $this->parser->parse(__FUNCTION__, $data);
     }
 
@@ -136,6 +231,7 @@ class Course extends CI_Controller {
                     $where = 'id = ' . $_POST['cid'];
                     $this->db->update('courses', $item, $where);
                     $arr['state'] = 'ok';
+                    $arr['msg'] = '编辑成功';
                 } else {
                     $arr['state'] = 'no';
                     $arr['msg'] = '编辑失败';
@@ -184,7 +280,7 @@ class Course extends CI_Controller {
         if (!empty($_GET['cid'])) {
             $where = '';
             if ($this->emer_users_info->type == 2) {
-                $where .= 'and  u_id = ' . $this->emer_users_info->id;
+                $where .= ' and  u_id = ' . $this->emer_users_info->id;
             }
             $sql = 'select * from courses where id = ' . $_GET['cid'] . $where;
             $course = $this->db->query($sql)->row();
@@ -194,6 +290,7 @@ class Course extends CI_Controller {
                 $data['cid'] = $_GET['cid'];
                 $data['course_title'] = $course->title;
                 $data['course_id'] = $course->id;
+                $data['course_state'] = $course->state;
                 if (empty($_GET['type']) || $_GET['type'] == 'procedures') {
                     //说明是添加教学索引
 
@@ -349,6 +446,9 @@ class Course extends CI_Controller {
             $data = array_merge($data, $this->data);
             $sql = 'select * from procedures where id = ' . $_GET['pid'];
             $procedures = $this->db->query($sql)->row();
+            $sql = 'select * from courses where id = ' . $procedures->c_id;
+            $course = $this->db->query($sql)->row();
+            $data['course_state'] = $course->state;
             $data['pTitle'] = $procedures->title;
             $data['pId'] = $procedures->id;
             $sql = 'select * from process where p_id = ' . $_GET['pid'];
@@ -672,8 +772,12 @@ class Course extends CI_Controller {
         if (!empty($_GET['eid'])) {
             $data = lz_tag();
             $data = array_merge($data, $this->data);
+
             $sql = 'select * from events where id = ' . $_GET['eid'];
             $event = $this->db->query($sql)->row();
+            $sql = 'select * from courses where id = ' . $event->c_id;
+            $course = $this->db->query($sql)->row();
+            $data['course_state'] = $course->state;
             $data['eTitle'] = $event->title;
             $data['eId'] = $event->id;
             $sql = 'select * from problems where e_id = ' . $_GET['eid'];

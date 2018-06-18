@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>一款基于JQuery做的动画背景后台管理登录模板 - </title>
+        <title>应急模拟演练实训系统 - 教师</title>
 
         <link href="/css/front/main.css" rel="stylesheet" type="text/css" />
     </head>

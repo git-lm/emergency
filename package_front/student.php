@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>应急模拟演练实训系统</title>
         <!--css-->
         <link rel="stylesheet" type="text/css" href="/css/front/public.css" />
         <link rel="stylesheet" type="text/css" href="/css/front/index.css" />
@@ -22,18 +22,18 @@
                 <div class="top_nav">
                     <div class="group-name"></div>
 
-                    <a class="dp">小组点评</a>
+                    <a class="dp" style="">小组点评</a>
                 </div>
 
 
-                <p class="lct">教学流程图</p>
+                <p class="lct">教学流程图</p><input type="hidden" name="client_id" >
                 <ul class="procedure">
 
                 </ul>
                 <!--idea-->
                 <div class="idea">
-                    <a href="javascript:;">查看各组观点</a>
-                    <a href="javascript:;">教学流程索引</a>
+                    <a href="javascript:;" class="checkGroupChat">查看各组观点</a>
+                    <a href="javascript:;" class="checkProcess">教学流程索引</a>
                 </div>
 
             </div>
@@ -62,8 +62,7 @@
 
                 <!--vises-->
                 <div class="vises">
-                    <span class="nr_name">名称</span>
-                    <img src="images/1.png" alt="" class="show_nr">
+
                 </div>
             </div>
             <!-- center  end -->
@@ -81,17 +80,17 @@
 
                     <ul>
                         <li class="cur relevants">
-                            <div></div>
+                            <div class="showRelevants"></div>
                             <p class="p_more">查看更多</p>
                         </li>
 
                         <li class="events">
-                            <div></div>
+                            <div class="showEvent"></div>
                             <p class="p_more">查看更多</p>
                         </li>
 
                         <li class="materials">
-                            <div></div>
+                            <div class="showMaterials"></div>
 
                             <p class="p_more">查看更多</p>
                         </li>
@@ -101,105 +100,31 @@
                 <!-- right  end -->
 
                 <div class="show_chat">
-                    <div class="L_chat chat">
-                        <span class="mc">张飞</span>张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞
-                    </div>
 
-                    <div class="L_chat chat">
-                        <span class="mc">张飞</span>张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞
-                    </div>
-
-                    <div class="R_chat chat">
-                        <span class="mc">张飞</span>张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞张飞
-                    </div>
                 </div>
 
                 <!-- man_list -->
                 <div class="man_list">
                     <ul>
-                        <li>张三</li>
-                        <li>张三</li>
-                        <li>张三</li>
-                        <li>张三</li>
-                        <li>张三</li>
-                        <li>张三</li>
+
                     </ul>
                 </div>
                 <!-- chat_shi -->
                 <div class="chat_shi">
-                    <textarea placeholder="事件演练"></textarea>
-                    <button>发送</button>
+                    <textarea placeholder="事件演练" name="chatCon"></textarea>
+                    <button class="chatSend">发送</button>
+                    <input name="to_u_id" type="hidden" value="0">
+                    <input name="source" type="hidden" value="2">
                 </div>
             </div>
         </div>
 
-        <!--弹出层  各组观点-->
-        <div class="show_Ceng" style="display:none;">
-            <div class="ceng"></div>
-            <div class="show_box">
-                <p class="dq_idea">调取观点<span class="close">x</span></p>
-                <div class="left">
-                    <ul>
-                        <li>应急指挥组</li>
-                        <li>现场处置组</li>
-                        <li>维持秩序A组</li>
-                        <li>维持秩序B组</li>
-                    </ul>
-                </div>
-                <div class="right2">
-                    <div class="show_chats">
-                        <ol>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2018-2-3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--弹出层  各组点评-->
-        <div class="show_Ceng" style="display:none;">
-            <div class="ceng"></div>
-            <div class="show_box">
-                <p class="dq_idea">点评区<span class="close">x</span></p>
-                <div class="left">
-                    <ul>
-                        <li>应急指挥组</li>
-                        <li>现场处置组</li>
-                        <li>维持秩序A组</li>
-                        <li>维持秩序B组</li>
-                    </ul>
-                </div>
-                <div class="right2">
-                    <div class="show_chats show_chats_pl">
-                        <textarea placeholder="您的点评"></textarea>
-                        <input type="button" value="保存"  class="btn" />
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--弹出层  数字索引-->
-        <div class="show_Ceng" style="display:none;">
-            <div class="ceng"></div>
-            <div class="show_box show_box_number">
-                <p class="dq_idea">调取观点<span class="close">x</span></p>
+       
 
-                <div class="right2">
-                    <div class="show_chats">
-                        <ol>
-                            <li><span class="time">1</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">2</span><p class="xinxi">死到那时可说的搜索</p></li>
-                            <li><span class="time">3</span><p class="xinxi">死到那时可说的搜索</p></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
+
         <script type="text/javascript" src="/js/front/public.js"></script>
         <script type="text/javascript" src="/js/front/student.js"></script>
     </body>

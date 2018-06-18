@@ -11,9 +11,7 @@
                     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                         <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
                             <div class="navbar-form-custom">
-                                <div class="form-group">
-                                    <input type="text" placeholder="请刷卡读取会员信息" autocomplete="off" class="form-control" name="member-search" id="member-search">
-                                </div>
+
                             </div>
                         </div>
 
@@ -31,13 +29,13 @@
                     </button>
                     <nav class="page-tabs J_menuTabs">
                         <div class="page-tabs-content">
-                            <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                            <a href="javascript:;" class="active J_menuTab" data-id="">首页</a>
                         </div>
                     </nav>
-                    <button class="roll-nav roll-right J_tabRight" style="right: 240px" style="right: 280px"><i class="fa fa-forward"></i>
+                    <button class="roll-nav roll-right J_tabRight" style="right: 180px" style="right: 280px"><i class="fa fa-forward"></i>
                     </button>
 
-                    <div class="btn-group roll-nav roll-right" style="right: 160px">
+                    <div class="btn-group roll-nav roll-right" style="right: 100px">
                         <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
 
                         </button>
@@ -55,12 +53,11 @@
 
 
 
-                    <a href="javascript:void(0)" class=" roll-nav roll-right J_tabExit J_tabRefresh" style="right: 60px ;width: 100px"><i class="fa fa fa-sign-out"></i> 刷新本页面</a>
-                    <a href="javascript:void(0)" onclick="logout()" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                    <a href="javascript:void(0)" class="roll-nav roll-right J_tabExit logout"><i class="fa fa fa-sign-out"></i> 退出</a>
 
                 </div>
                 <div class="row J_mainContent" id="content-main">
-                    <iframe class="J_iframe" name="iframe0" id="iframe0"width="100%" height="100%" src="{base}course/course_calendar" frameborder="0" data-id="{base}course" seamless></iframe>
+                    <iframe class="J_iframe" name="iframe0" id="iframe0"width="100%" height="100%" src="{base}course/eliteList" frameborder="0" data-id="{base}course" seamless></iframe>
                 </div>
             </div>
             <!--右侧部分结束-->

@@ -20,7 +20,7 @@
 
                             </div>
                             <?php
-                            if ($emer_users_info['type'] == 2) {
+                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                 ?>
                                 <button data-toggle="button" class="right btn btn-primary btn-outline addrelevants" type="button" itemid="<?php echo $course_id ?>">新增相关案例</button>
                             <?php } ?>
@@ -35,7 +35,7 @@
                                         <th>案例概述</th>
                                         <th>事件名称</th>
                                         <?php
-                                        if ($emer_users_info['type'] == 2) {
+                                        if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                             ?>
                                             <th>操作</th>
                                         <?php } ?>
@@ -51,7 +51,7 @@
                                             <td><?php echo $list->summary ?></td>
                                             <td><a target="_blank" href="{base}<?php echo $list->event_url ?>"><?php echo $list->event_name ?></a></td>
                                             <?php
-                                            if ($emer_users_info['type'] == 2) {
+                                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                                 ?>
                                                 <td>
                                                     <button type="button" class="btn btn-default btn-sm relevant-edit"  itemid="<?php echo $list->id ?>">修改</button>

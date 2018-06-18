@@ -11,16 +11,7 @@
  * @author Administrator
  */
 class model_student extends CI_Model {
-    /*
-     * 获取小组信息
-     * g_id 小组ID
-     */
-
-    public function getGroup($g_id = 0) {
-        $sql = 'select * from groups where id = ' . $g_id;
-        $group = $this->db->query($sql)->row_array();
-        return $group;
-    }
+   
 
     /*
      * 获取小组的所有问题

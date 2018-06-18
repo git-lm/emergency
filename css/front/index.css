@@ -307,7 +307,7 @@ body{
     width:80%;
     left:10%;
     height: auto;
-    top: 10%;
+    /*    top: 10%;*/
     position: fixed;
     z-index: 100;
     background-color: #fff;
@@ -447,6 +447,7 @@ body{
     position: absolute;
     bottom: 59px;
     box-shadow: 1px 1px 1px 1px #d4d4d4;
+    display: none;
 }
 
 .man_list li{
@@ -465,14 +466,20 @@ body{
 
 .halfs span{
     display: inline-block;
-    width: 50%;
+    width: 30%;
     float: left;
     font-size: 38px;
+}
+.halfs span:nth-child(1){
+    float: left;
+}
+.halfs span:nth-child(3){
+    float: right;
 }
 
 .c_top_teacher{
     position: relative;
-    height: 20%;
+    height: 25%;
     background-color: #eee;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -618,6 +625,7 @@ body{
 }
 
 .pm{
+    padding-top: 2%;
     width: 100%;
 }
 
@@ -700,7 +708,7 @@ body{
     width: 100%;
 }
 .cur{
-    color:red;
+    color:red !important;
 }
 .student .procedure{
     margin: auto;

@@ -10,6 +10,9 @@ $(function(){
             })   
             return;
         }
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $('#logoedit').ajaxSubmit({
             success: function (data) {
                 $.showMsg(data);
@@ -77,6 +80,9 @@ $(function(){
                     $$('.help-block').html('不能为空');
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $$('#user-add').ajaxSubmit({
                     success: function (data) {
                         $.showMsg(data);
@@ -134,6 +140,9 @@ $(function(){
                             $$('.help-block').html('姓名不能为空');
                             return;
                         }
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $$('#user-edit').ajaxSubmit({
                             success: function (data) {
                                 $.showMsg(data);
@@ -177,6 +186,9 @@ $(function(){
             var index = layer.load(0, {
                 shade: [0.5, '#000'] //0.1透明度的白色背景
             });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'sysconfig/userReset', {
                 'uid': uid
             }, function (data) {

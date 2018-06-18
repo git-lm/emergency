@@ -39,7 +39,7 @@ class Uploads extends CI_Model {
                 "application/msword", "application/vnd.ms-excel", "application/vnd.ms-powerpoint",
                 "application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                 "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                "application/vnd.openxmlformats-officedocument.presentationml.presentation");
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation",'video/mp4');
 
 
 
@@ -97,6 +97,9 @@ class Uploads extends CI_Model {
             }
             if ($filetype == 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
                 $type = '.pptx';
+            }
+            if ($filetype == 'video/mp4') {
+                $type = '.mp4';
             }
 
             if ($imgs["name"]) {

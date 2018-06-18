@@ -20,7 +20,7 @@
 
                             </div>
                             <?php
-                            if ($emer_users_info['type'] == 2) {
+                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                 ?>
                                 <button data-toggle="button" class="right btn btn-primary btn-outline addevents" type="button" itemid="<?php echo $course_id ?>">新增事件叠加</button>
                             <?php } ?>
@@ -44,7 +44,7 @@
                                             <td class="events-title"><?php echo $list->title ?></td>
                                             <td>
                                                 <?php
-                                                if ($emer_users_info['type'] == 2) {
+                                                if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                                     ?>
                                                     <button type="button" class="btn btn-default btn-sm events-edit"  itemid="<?php echo $list->id ?>">修改</button>
                                                     <button type="button" class="btn btn-default btn-sm events-del"  itemid="<?php echo $list->id ?>">删除</button>

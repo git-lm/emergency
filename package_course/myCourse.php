@@ -34,6 +34,7 @@
                                         <th>编号</th>
                                         <th>课程名称</th>
                                         <th>上课时间</th>
+                                        <th>下课时间</th>
 
                                         <th>查看</th>
                                     </tr>
@@ -46,13 +47,14 @@
                                             <td><?php echo $list->rownum ?></td>
                                             <td class="course-title"><?php echo $list->title ?></td>
                                             <td><?php echo $list->begin_time ?></td>
+                                            <td><?php echo $list->end_time ?></td>
                                             <td >
                                                 <?php
-                                                if ($list->state == 2) {
+                                                if ($list->state == 1 ) {
                                                     ?>
                                                     <button type="button" class="btn btn-default btn-sm " onclick="window.location.href = '{base}course/courseInfo.html?cid=<?php echo $list->id ?>'">课程信息</button>
                                                     <?php
-                                                    if ($emer_users_info['type'] == 2) {
+                                                    if ($emer_users_info['type'] == 2 && $list->state == 1) {
                                                         ?>
                                                         <button type="button" class="btn btn-default btn-sm course-edit" itemid="<?php echo $list->id ?>">修改课程名称</button>
                                                     <?php } else if ($emer_users_info['type'] == 1) { ?>

@@ -16,13 +16,13 @@ class Teacher extends CI_Controller {
         parent::__construct();
         $this->load->model('model_teacher');
         $this->load->model('model_public');
+        $this->load->model('model_gateway');
         $this->load->model('uploads');
         $this->load->add_package_path(APPPATH . '../package_front', false);
         $this->now_time = date('Y-m-d H:i:s');
         $emergerncyUserId = $this->session->userdata('emergerncyUserId');
         if (!empty($emergerncyUserId)) {
-            $sql = 'select * from users where id = ' . $emergerncyUserId;
-            $this->emergerncyUser = $this->db->query($sql)->row();
+            $this->emergerncyUser = $this->model_public->getUser($emergerncyUserId);
             if (empty($this->emergerncyUser)) {
                 header('Location:' . base_url() . 'frontPublic/loginTeacher');
                 return;
@@ -62,7 +62,8 @@ class Teacher extends CI_Controller {
             //获取正在上课的所有教学流程
             $processCourse->procedures = $this->model_public->getCourseFlow($processCourse->id);
             //获取正在上课的所有小组
-            $processCourse->groups = $this->model_teacher->getCourseGroup($processCourse->id);
+            $cItem['c_id'] = $processCourse->id;
+            $processCourse->groups = $this->model_public->getGroups($cItem);
             //获取正在上课的流程
             $record_procedures = $this->model_public->getProcessProcedures($processCourse->id);
             //获取正在上课的流程ID
@@ -73,8 +74,42 @@ class Teacher extends CI_Controller {
             $record_process = $this->model_public->getProcessRecord($processCourse->id);
             //获取正在上课的事件的索引
             $processCourse->process = $this->model_public->getProcess($record_process->pc_id);
+            //获取所有发言信息
+
+            $cItem['type'] = 1;
+            $chats = $this->model_public->getChats($cItem, 'id desc');
+            foreach ($chats as $val) {
+                if ($val->source == 1 && $val->u_id == $this->emergerncyUser->id) {
+                    $val->className = 'R_chat';
+                } else {
+                    $val->className = 'L_chat';
+                }
+                if ($val->source == 1) {
+                    $val->name = $this->model_public->getUser($val->u_id)->name;
+                } else {
+                    $val->name = $this->model_public->getGroup($val->u_id)->name;
+                }
+            }
+            $processCourse->chats = $chats;
+            //加入组
+            $this->joinGroup();
         }
         echo json_encode($processCourse);
+    }
+
+    /*
+     * 把教师加入到组中  方便发送信息
+     * 先通过教师ID 获取他的client_id
+     * 在通过client_id 加入到组中
+     */
+
+    public function joinGroup() {
+        $ClientIdByUids = $this->model_gateway->getClientIdByUid('t' . $this->emergerncyUser->id); //返回一个数组
+        $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
+        if (!empty($ClientIdByUids)) {
+            $client_id = $ClientIdByUids[0];
+            $this->model_gateway->joinGroup($client_id, $processCourse->id);
+        }
     }
 
     /*     * **************************************************分隔符     上部分刷新获取   下部分事件获取****************************************************************************************** */
@@ -111,6 +146,13 @@ class Teacher extends CI_Controller {
             if (!empty($course)) {
                 $req = $this->model_teacher->beginCourse($_POST['c_id']);
                 if ($req) {
+                    //保存登录信息
+                    $item['u_id'] = $this->emergerncyUser->id;
+                    $item['type'] = 2;
+                    $item['c_id'] = $_POST['c_id'];
+                    $item['add_time'] = $this->now_time;
+                    $this->model_public->setMessage($item);
+                    //保存登录信息结束
                     $resjson['state'] = 'ok';
                     $resjson['msg'] = '上课成功';
                 } else {
@@ -137,6 +179,9 @@ class Teacher extends CI_Controller {
         if (!empty($processCourse)) {
             $req = $this->model_teacher->endCourse($processCourse->id);
             if ($req) {
+                $message['type'] = 'end';
+                $msgString = json_encode($message);
+                $this->model_gateway->sendToGroup($processCourse->id, $msgString);
                 $resjson['state'] = 'ok';
                 $resjson['msg'] = '该课程已结束';
             } else {
@@ -243,6 +288,10 @@ class Teacher extends CI_Controller {
                 if (!empty($procedures)) {
                     $req = $this->model_teacher->setProcess($procedures->c_id, $process->id);
                     if ($req) {
+                        $message['type'] = 'resource';
+                        $message['url'] = $process->material;
+                        $msgString = json_encode($message);
+                        $this->model_gateway->sendToGroup($procedures->c_id, $msgString);
                         $resjson['state'] = 'ok';
                         $resjson['msg'] = $process;
                     } else {
@@ -271,15 +320,15 @@ class Teacher extends CI_Controller {
     public function getCourseGroup() {
         $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
         if (!empty($processCourse)) {
-
-            $groups = $this->model_teacher->getCourseGroup($processCourse->id);
-            $resjson['state'] = 'no';
+            $cItem['c_id'] = $processCourse->id;
+            $groups = $this->model_public->getGroups($cItem);
+            $resjson['state'] = 'ok';
             $resjson['msg'] = $groups;
         } else {
             $resjson['state'] = 'no';
             $resjson['msg'] = '该课程已结束';
         }
-        echo json_encode($groups);
+        echo json_encode($resjson);
     }
 
     /*
@@ -292,7 +341,8 @@ class Teacher extends CI_Controller {
             $procedures = $this->model_teacher->getProcedures($_POST['prd_id']);
             if (!empty($procedures)) {
                 //获取课程小组
-                $groups = $this->model_teacher->getCourseGroup($procedures->c_id);
+                $cItem['c_id'] = $procedures->c_id;
+                $groups = $this->model_public->getGroups($cItem);
                 if (!empty($groups)) {
                     $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
                     if (!empty($processCourse)) {
@@ -305,7 +355,7 @@ class Teacher extends CI_Controller {
                         $record_events = $this->model_teacher->getEventGroup($item);
                         $eventGroupHtml = '';
                         foreach ($record_events as $key => $val) {
-                            $group = $this->model_teacher->getGroup($val->g_id);
+                            $group = $this->model_public->getGroup($val->g_id);
                             $event = $this->model_teacher->getEvent($val->e_id);
 
                             $eventGroupHtml .= '<li>' . $event->title . ':' . $group->name . '</li>';
@@ -361,6 +411,12 @@ class Teacher extends CI_Controller {
                         $item['prd_id'] = $processProcedures->prd_id;
                         $record_events = $this->model_teacher->getEventGroup($item);
                         if (empty($record_events)) {
+                            $event = $this->model_teacher->getEvent($_POST['event'][$i]);
+                            $message['type'] = 'event';
+                            $message['title'] = $event->title;
+                            $message['e_id'] = $event->id;
+                            $msgString = json_encode($message);
+                            $this->model_gateway->sendToUid('s' . $_POST['group'][$j], $msgString);
                             $req = $this->model_teacher->setEventGroup($processCourse->id, $processProcedures->prd_id, $_POST['event'][$i], $_POST['group'][$j]);
                         }
                     }
@@ -385,21 +441,18 @@ class Teacher extends CI_Controller {
     }
 
     /*
-     * 获取小组已经注入的小组事件
+     * 获取小组已经注入的小组事件的所有问题
      * g_id  小组ID
      */
 
-    public function getGroupEvents() {
+    public function getGroupEventsProblem() {
         if (!empty($_POST['g_id'])) {
             $processCourse = $this->model_teacher->getProcessCourse($this->emergerncyUser->id);
             if (!empty($processCourse)) {
                 $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
-                $item['c_id'] = $processCourse->id;
-                $item['g_id'] = $_POST['g_id'];
-                $item['prd_id'] = $processProcedures->prd_id;
-                $events = $this->model_teacher->getGroupEvents($item);
+                $eventProblem = $this->model_teacher->getGroupEventsProblem($_POST['g_id'], $processProcedures->prd_id);
                 $resjson['state'] = 'ok';
-                $resjson['msg'] = $events;
+                $resjson['msg'] = $eventProblem;
             } else {
                 $resjson['state'] = 'no';
                 $resjson['msg'] = '该课程已结束';
@@ -424,13 +477,19 @@ class Teacher extends CI_Controller {
             if (!empty($processCourse)) {
                 $processProcedures = $this->model_public->getProcessProcedures($processCourse->id);
                 for ($i = 0; $i < count($_POST['problem']); $i++) {
-                    //注入小组事件
+                    //注入小组事件问题
                     $item['pb_id'] = $_POST['problem'][$i];
                     $item['g_id'] = $_POST['g_id'];
                     $item['prd_id'] = $processProcedures->prd_id;
 
                     $record_problems = $this->model_teacher->getGroupProblem($item);
                     if (empty($record_problems)) {
+                        $problem = $this->model_public->getProblem($_POST['problem'][$i]);
+                        $message['type'] = 'problem';
+                        $message['title'] = $problem->title;
+                        $message['p_id'] = $problem->id;
+                        $msgString = json_encode($message);
+                        $this->model_gateway->sendToUid('s' . $_POST['g_id'], $msgString);
                         $req = $this->model_teacher->setGroupProblem($processCourse->id, $processProcedures->prd_id, $_POST['g_id'], $_POST['problem'][$i]);
                     }
                 }
@@ -497,6 +556,12 @@ class Teacher extends CI_Controller {
                 $record_materials = $this->model_teacher->getGroupMaterials($item);
                 if (empty($record_materials)) {
                     $this->model_teacher->setGroupMaterial($processCourse->id, $processProcedures->prd_id, $item['g_id'], $item['m_id']);
+                    $material = $this->model_public->getMaterial($item['m_id']);
+                    $message['type'] = 'material';
+                    $message['title'] = $material->title;
+                    $message['m_id'] = $material->id;
+                    $msgString = json_encode($message);
+                    $this->model_gateway->sendToUid('t' . $item['g_id'], $msgString);
                     $resjson['state'] = 'ok';
                     $resjson['msg'] = '素材分发成功';
                 } else {

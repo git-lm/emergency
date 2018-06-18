@@ -6,7 +6,7 @@
         <ul class="nav" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element" style="margin-left: 20%">
-                    <span><img alt="image" class="img-circle" src="{base}images/profile_small.jpg" /></span>
+                    <span><img alt="image" width="80px" height="80px" class="img-circle" src="{base}<?php echo @$emer_users_info['photo'] ?>" /></span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
                         <span class="clear">
@@ -21,11 +21,11 @@
                         <li><a class="J_menuItem" href="{base}metal/change_pwd.html">修改密码</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="javascript:void()" onclick="logout()">安全退出</a>
+                        <li><a href="javascript:void()" class="logout">安全退出</a>
                         </li>
                     </ul>
                 </div>
-                <div class="logo-element">H+
+                <div class="logo-element">
                 </div>
             </li>
 
@@ -51,23 +51,29 @@
                 </ul>
 
             </li>
-            <li>
 
-                <a  href="#">
-                    <i class="fa fa-home"></i>
-                    <span class="nav-label">系统配置</span>
-                </a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a class="J_menuItem" href="{base}sysconfig/logo.html" data-index="0">LOGO设置</a>
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="{base}sysconfig/users.html" data-index="0">账号设置</a>
-                    </li>
 
-                </ul>
+            <?php
+            if (!empty($emer_users_info) && $emer_users_info['type'] == 1) {
+                ?>
+                <li>
 
-            </li>
+                    <a  href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">系统配置</span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a class="J_menuItem" href="{base}sysconfig/logo.html" data-index="0">LOGO设置</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="{base}sysconfig/users.html" data-index="0">账号设置</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            <?php } ?>
 
 
 

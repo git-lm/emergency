@@ -15,13 +15,16 @@ $(function () {
             });
             return false;
         }
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + "login/userLogin", {
             "username": username, 
             "password": password
           
         }, function (data) {
             if (data.state == "ok") {
-                window.location.href = base + 'metal.html';
+                window.location.href = base + 'welcome.html';
               
             } else if(data.state == "no"){
                 parent.layer.open({
@@ -37,5 +40,12 @@ $(function () {
         },'json')
 
     })
+    
+    $('.logout').click(function(){
+        window.location.href = base + 'login/loginout.html';
+        
+    })
+    
+    
 
 })

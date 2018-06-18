@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <?php
-                                if ($emer_users_info['type'] == 2) {
+                                if ($emer_users_info['type'] == 2 && $course_state == 1) {
                                     ?>
                                     <button data-toggle="button" class="right btn btn-primary btn-outline problems-add" itemid="{eId}" type="button">新增事件叠加问题</button>
                                 <?php } ?>
@@ -29,7 +29,7 @@
                                         <th>问题名称</th>
                                         <th>相关事件</th>
                                         <?php
-                                        if ($emer_users_info['type'] == 2) {
+                                        if ($emer_users_info['type'] == 2 && $course_state == 1) {
                                             ?>
                                             <th>操作</th>
                                         <?php } ?>
@@ -50,7 +50,7 @@
                                                 <?php } ?>
                                             </td>
                                             <?php
-                                            if ($emer_users_info['type'] == 2) {
+                                            if ($emer_users_info['type'] == 2 && $course_state == 1) {
                                                 ?>
                                                 <td>
                                                     <button type="button" class="btn btn-default btn-sm problems-edit" itemid="<?php echo $list->id ?>">修改</button>

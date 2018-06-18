@@ -20,7 +20,7 @@
 
                             </div>
                             <?php
-                            if ($emer_users_info['type'] == 2) {
+                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                 ?>
                                 <button data-toggle="button" class="right btn btn-primary btn-outline addprocedures" type="button" itemid="<?php echo $course_id ?>">新增教学流程</button>
                             <?php } ?>
@@ -44,7 +44,7 @@
                                             <td class="procedures-title"><?php echo $list->title ?></td>
                                             <td>
                                                 <?php
-                                                if ($emer_users_info['type'] == 2) {
+                                                if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                                     ?>
                                                     <button type="button" class="btn btn-default btn-sm procedures-edit" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">修改</button>
                                                     <button type="button" class="btn btn-default btn-sm procedures-del" itemcode="<?php echo $course_id ?>" itemid="<?php echo $list->id ?>">删除</button>

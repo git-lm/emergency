@@ -1,0 +1,596 @@
+2018-06-17 02:27:23 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:24 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:25 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:26 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:27 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:28 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:29 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:29 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:30 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:32 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:33 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:33 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:33 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:34 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:34 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:35 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:35 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:36 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:36 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-06-17 02:27:36 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-06-17 02:27:37 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:37 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:37 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:38 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:38 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:39 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:39 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:39 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:39 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:40 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:40 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:40 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:41 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:41 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:41 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:41 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:42 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:42 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:42 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:43 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:43 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:43 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:43 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:44 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:45 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:46 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:46 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:47 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:47 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:48 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:48 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:48 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:49 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:49 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:50 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:50 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:51 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:51 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:52 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:52 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:53 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:53 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:56 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:56 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:56 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:56 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:58 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:58 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:27:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:27:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:00 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:00 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:01 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:01 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:02 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:02 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:06 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:06 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:06 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:06 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:07 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:07 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:08 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:08 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:08 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:09 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:09 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:09 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:10 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:10 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:10 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:11 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:11 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:11 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:12 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:12 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:12 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:13 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:13 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:13 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:14 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:14 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:14 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:15 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:15 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:15 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:16 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:16 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:16 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:17 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:17 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:17 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:17 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:18 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:18 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:19 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:19 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:19 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:20 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:20 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:20 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:21 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:21 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:21 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:22 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:22 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:22 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:23 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:23 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:23 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:24 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:24 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:25 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:25 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:25 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:26 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:26 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:26 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:26 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:27 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:27 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:27 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:28 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:28 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:28 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:29 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:29 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:29 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:29 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:30 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:30 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:30 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:30 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:31 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:31 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:32 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:32 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:32 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:32 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:33 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:33 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:33 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:33 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:34 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:34 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:34 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:35 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:35 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:35 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:36 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:36 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:36 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:36 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:36 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-06-17 02:28:36 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-06-17 02:28:37 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:37 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:37 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:37 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:38 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:38 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:38 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:38 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:39 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:39 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:39 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:39 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:40 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:40 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:40 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:41 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:41 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:41 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:41 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:42 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:42 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:42 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:42 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:43 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:43 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:43 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:43 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:44 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:44 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:45 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:46 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:46 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:46 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:46 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:47 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:47 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:48 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:48 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:48 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:48 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:49 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:49 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:50 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:51 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:51 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:52 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:52 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:53 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:53 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:56 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:56 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:56 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:58 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:58 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:28:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:28:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:00 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:00 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:01 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:02 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:06 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:06 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:06 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:07 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:07 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:08 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:08 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:08 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:08 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:09 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:09 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:09 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:09 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:10 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:10 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:10 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:10 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:11 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:11 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:11 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:11 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:12 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:12 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:12 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:12 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:13 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:13 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:13 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:13 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:14 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:14 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:14 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:14 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:15 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:15 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:15 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:15 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:16 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:16 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:16 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:16 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:17 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:17 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:17 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:17 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:18 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:18 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:18 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:18 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:19 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:19 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:19 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:19 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:20 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:20 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:20 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:20 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:21 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:29:21 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:29:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:43 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:44 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:45 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:46 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:47 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:48 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:49 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:50 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:51 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:52 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:53 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:53 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:54 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:54 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:55 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:55 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:56 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:56 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:56 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:57 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:57 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:58 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:58 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:32:59 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:32:59 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:00 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:00 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:01 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:01 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:02 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:02 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:03 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:03 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:04 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:04 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:05 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:05 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:06 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:06 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:06 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:33:07 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:33:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-06-17 02:37:30 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:37:30 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:37:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:37:31 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 02:37:32 pid:1 Worker process terminated with ERROR: E_ERROR "Class 'CI_Controller' not found in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 30"
+2018-06-17 03:30:13 pid:1 Worker process terminated with ERROR: E_ERROR "Using $this when not in object context in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 41"
+2018-06-17 03:32:22 pid:1 Worker process terminated with ERROR: E_ERROR "Call to undefined function sendToClient() in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 41"
+2018-06-17 03:34:36 pid:1 Worker process terminated with ERROR: E_ERROR "Call to undefined function sendToClient() in E:\phpStudy\PHPTutorial\WWW\emergency\app\libraries\wokerman\Events.php on line 41"
+2018-06-17 15:44:57 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #308)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:44:57 pid:1 Worker process terminated
+2018-06-17 15:46:45 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #36)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:46:45 pid:1 Worker process terminated
+2018-06-17 15:46:56 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #39)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:46:56 pid:1 Worker process terminated
+2018-06-17 15:48:25 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #38)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:48:25 pid:1 Worker process terminated
+2018-06-17 15:49:26 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #38)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:49:26 pid:1 Worker process terminated
+2018-06-17 15:49:58 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #38)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:49:58 pid:1 Worker process terminated
+2018-06-17 15:50:31 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Protocols\Websocket.php:232
+Stack trace:
+#0 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(841): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Connection\TcpConnection.php(645): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37)
+#5 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Events\Select.php(289): call_user_func_array(Array, Array)
+#6 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(2231): Workerman\Events\Select->loop()
+#7 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\gateway-worker\src\Gateway.php(279): Workerman\Worker->run()
+#8 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1221): GatewayWorker\Gateway->run()
+#9 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(1164): Workerman\Worker::forkWorkersForWindows()
+#10 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\vendor\workerman\workerman\Worker.php(478): Workerman\Worker::forkWorkers()
+#11 E:\phpStudy\PHPTutorial\WWW\emergency\app\controllers\workerman\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2018-06-17 15:50:31 pid:1 Worker process terminated

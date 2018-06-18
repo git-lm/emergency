@@ -27,7 +27,7 @@ class model_teacher extends CI_Model {
      */
 
     public function beginCourse($c_id = 0) {
-        $sql = 'update courses set state = 2 where id = ' . $c_id;
+        $sql = 'update courses set state = 2 ,begin_time = "' . date('Y-m-d H:i:s') . '" where id = ' . $c_id;
         $this->db->query($sql);
         $rows = $this->db->affected_rows();
         if ($rows == 0) {
@@ -36,13 +36,14 @@ class model_teacher extends CI_Model {
             return true;
         }
     }
+
     /*
-     * 开始上课
+     * 结束上课
      * c_id
      */
 
     public function endCourse($c_id = 0) {
-        $sql = 'update courses set state = 3 where id = ' . $c_id;
+        $sql = 'update courses set state = 3 ,begin_time = "' . date('Y-m-d H:i:s') . '" where id = ' . $c_id;
         $this->db->query($sql);
         $rows = $this->db->affected_rows();
         if ($rows == 0) {
@@ -62,17 +63,6 @@ class model_teacher extends CI_Model {
         $sql = 'select * from courses where u_id = ' . $uid . ' and state = 2';
         $processCourse = $this->db->query($sql)->row();
         return $processCourse;
-    }
-
-    /*
-     * 选择小组
-     * cid 课程ID
-     */
-
-    public function getCourseGroup($cid = 0) {
-        $sql = 'select * from groups where  c_id =' . $cid;
-        $groups = $this->db->query($sql)->result();
-        return $groups;
     }
 
     /*
@@ -204,17 +194,6 @@ class model_teacher extends CI_Model {
     }
 
     /*
-     * 选择单个小组
-     * id 小组ID
-     */
-
-    public function getGroup($id = 0) {
-        $sql = 'select * from groups where  id =' . $id;
-        $group = $this->db->query($sql)->row();
-        return $group;
-    }
-
-    /*
      * 获取单个事件
      * id 事件ID
      */
@@ -250,6 +229,18 @@ class model_teacher extends CI_Model {
         $sql = 'select e.* from record_events re left join events e on e.id = re.e_id ' . $where;
         $events = $this->db->query($sql)->result();
         return $events;
+    }
+
+    /*
+     * 获取小组已经注入事件的所有问题.
+     * g_id 小组ID
+     * prd_id  流程ID
+     */
+
+    public function getGroupEventsProblem($g_id = 0, $prd_id = 0) {
+        $sql = 'select  p.* from problems p INNER JOIN record_events re on re.e_id = p.e_id where re.g_id = ' . $g_id . ' and prd_id =  ' . $prd_id;
+        $eventProblem = $this->db->query($sql)->result();
+        return $eventProblem;
     }
 
     /*

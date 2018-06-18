@@ -36,6 +36,7 @@ $(function(){
     //修改课程名称
     
     $('.course-edit').on('click',function(){
+        
         var title = $(this).parent().parent().find('.course-title').text().replace(/"/g,'&quot;');
         var cid = $(this).attr('itemid');
         var html = '<label class="col-sm-4 control-label">课程名称：</label>'
@@ -51,6 +52,9 @@ $(function(){
             btn: ['确认', '取消'],
             yes: function (index, layero) {
                 var title = $$('input[name="title"]').val()
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base+'course/courseEdit',{
                     'title':title,
                     'cid':cid
@@ -78,9 +82,9 @@ $(function(){
         layer.confirm(con, {
             btn: ['确定', '后悔了'] //按钮
         }, function () {
-            var index = layer.load(0, {
-                shade: [0.5, '#000'] //0.1透明度的白色背景
-            });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/course_elite', {
                 'cid': cid,
                 'type':type
@@ -106,6 +110,9 @@ $(function(){
             btn: ['确认', '取消'],
             yes: function (index, layero) {
                 var title = $$('input[name="title"]').val()
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base+'course/courseInfo_proceduresAdd',{
                     'title':title,
                     'cid':cid
@@ -137,6 +144,9 @@ $(function(){
             btn: ['确认', '取消'],
             yes: function (index, layero) {
                 var title = $$('input[name="title"]').val()
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base+'course/courseInfo_proceduresEdit',{
                     'title':title,
                     'cid':cid,
@@ -159,9 +169,9 @@ $(function(){
         parent.layer.confirm('您确定要删除？', {
             btn: ['确定', '后悔了'] //按钮
         }, function () {
-            var index = layer.load(0, {
-                shade: [0.5, '#000'] //0.1透明度的白色背景
-            });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/courseInfo_proceduresDel', {
                 'cid': cid,
                 'pid':pid
@@ -214,6 +224,9 @@ $(function(){
                     })
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $$('#process-add').ajaxSubmit({
                     success: function (data) {
                         $.showMsg(data);
@@ -282,6 +295,9 @@ $(function(){
                             })
                             return;
                         }
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $$('#process-add').ajaxSubmit({
                             success: function (data) {
                                 $.showMsg(data);
@@ -340,6 +356,9 @@ $(function(){
                     })
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base + 'course/groupsAdd', {
                     'name': name,
                     'username':username,
@@ -399,6 +418,9 @@ $(function(){
                     })
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base + 'course/groupsEdit', {
                     'name': name,
                     'username':username,
@@ -424,6 +446,9 @@ $(function(){
             var index = layer.load(0, {
                 shade: [0.5, '#000'] //0.1透明度的白色背景
             });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/groupsDel', {
                 'gid': gid
             }, function (data) {
@@ -482,6 +507,9 @@ $(function(){
                     })
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $$('#materials-add').ajaxSubmit({
                     success: function (data) {
                         $.showMsg(data);
@@ -576,6 +604,9 @@ $(function(){
                             })
                             return;
                         }
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $$('#process-add').ajaxSubmit({
                             success: function (data) {
                                 $.showMsg(data);
@@ -603,6 +634,9 @@ $(function(){
             var index = layer.load(0, {
                 shade: [0.5, '#000'] //0.1透明度的白色背景
             });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/materialDel', {
                 'mid': mid
             }, function (data) {
@@ -627,6 +661,9 @@ $(function(){
             btn: ['确认', '取消'],
             yes: function (index, layero) {
                 var title = $$('input[name="title"]').val()
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base+'course/courseInfo_eventsAdd',{
                     'title':title,
                     'cid':cid
@@ -656,6 +693,9 @@ $(function(){
             btn: ['确认', '取消'],
             yes: function (index, layero) {
                 var title = $$('input[name="title"]').val()
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $.post(base+'course/courseInfo_eventsEdit',{
                     'title':title,
                     'eid':eid
@@ -676,9 +716,9 @@ $(function(){
         parent.layer.confirm('您确定要删除？', {
             btn: ['确定', '后悔了'] //按钮
         }, function () {
-            var index = layer.load(0, {
-                shade: [0.5, '#000'] //0.1透明度的白色背景
-            });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/courseInfo_eventsDel', {
                 'eid': eid
             }, function (data) {
@@ -721,6 +761,9 @@ $(function(){
                     $$('.help-block').html('请完整填写');
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $$('#problems-add').ajaxSubmit({
                     success: function (data) {
                         $.showMsg(data);
@@ -779,6 +822,9 @@ $(function(){
                             $$('.help-block').html('请完整填写');
                             return;
                         }
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $$('#problems-edit').ajaxSubmit({
                             success: function (data) {
                                 $.showMsg(data);
@@ -804,6 +850,9 @@ $(function(){
             var index = layer.load(0, {
                 shade: [0.5, '#000'] //0.1透明度的白色背景
             });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/problemsDel', {
                 'eid': eid
             }, function (data) {
@@ -853,6 +902,9 @@ $(function(){
                     $$('.help-block').html('请完整填写');
                     return;
                 }
+                var index = layer.load(1,{
+                    shade: [0.5,'#000']
+                })
                 $$('#relevants-add').ajaxSubmit({
                     success: function (data) {
                         $.showMsg(data);
@@ -917,6 +969,9 @@ $(function(){
                             $$('.help-block').html('请完整填写');
                             return;
                         }
+                        var index = layer.load(1,{
+                            shade: [0.5,'#000']
+                        })
                         $$('#relevant-edit').ajaxSubmit({
                             success: function (data) {
                                 $.showMsg(data);
@@ -942,6 +997,9 @@ $(function(){
             var index = layer.load(0, {
                 shade: [0.5, '#000'] //0.1透明度的白色背景
             });
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base + 'course/relevantDel', {
                 'rid': rid
             }, function (data) {

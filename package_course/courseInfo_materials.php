@@ -20,7 +20,7 @@
 
                             </div>
                             <?php
-                            if ($emer_users_info['type'] == 2) {
+                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                 ?>
                                 <button data-toggle="button" class="right btn btn-primary btn-outline addmaterial" type="button" itemid="<?php echo $course_id ?>">新增资源素材</button>
                             <?php } ?>
@@ -35,7 +35,7 @@
                                         <th>资源类型</th>
                                         <th>素材资源</th>
                                         <?php
-                                        if ($emer_users_info['type'] == 2) {
+                                        if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                             ?>
                                             <th>操作</th>
                                         <?php } ?>
@@ -58,7 +58,7 @@
 
                                             </td>
                                             <?php
-                                            if ($emer_users_info['type'] == 2) {
+                                            if ($emer_users_info['type'] == 2 && $course_state == 1 ) {
                                                 ?>
                                                 <td>
                                                     <button type="button" class="btn btn-default btn-sm material-edit"  itemid="<?php echo $list->id ?>">修改</button>

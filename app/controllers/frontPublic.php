@@ -41,7 +41,7 @@ class frontPublic extends CI_Controller {
             $resjson = $this->model_public->loginCheckTeacher($_POST);
             if ($resjson['state'] == 'ok') {
                 $this->session->set_userdata('emergerncyUserId', $resjson['msg']['id']);
-                
+
                 $resjson['state'] = 'ok';
                 $resjson['msg'] = '登录成功';
             } else {
@@ -81,6 +81,13 @@ class frontPublic extends CI_Controller {
                 if (!empty($course)) {
                     if (!empty($course['state']) && $course['state'] == 2) {
                         $this->session->set_userdata('emergerncyGroupId', $group['id']);
+                        //保存登录信息
+                        $item['from_g_id'] = $group['id'];
+                        $item['type'] = 2;
+                        $item['c_id'] = $course->id;
+                        $item['add_time'] = $this->now_time;
+                        $this->model_public->setMessage($item);
+                        //保存登录信息结束
                         $resjson['state'] = 'ok';
                         $resjson['msg'] = '登录成功';
                     } else {
@@ -98,6 +105,33 @@ class frontPublic extends CI_Controller {
         } else {
             $resjson['state'] = 'no';
             $resjson['msg'] = '请完整填写登录信息';
+        }
+        echo json_encode($resjson);
+    }
+
+    /*
+     * 获取各小组留言
+     * g_id  小组ID
+     */
+
+    public function getGroupChats() {
+        if (!empty($_POST['g_id'])) {
+            //获取小组所在的课程
+            $group = $this->model_public->getGroup($_POST['g_id']);
+            if (!empty($group)) {
+                $item['u_id'] = $_POST['g_id'];
+                $item['c_id'] = $group->c_id;
+                $order = 'id desc';
+                $chats = $this->model_public->getChats($item, $order);
+                $resjson['state'] = 'ok';
+                $resjson['msg'] = $chats;
+            } else {
+                $resjson['state'] = 'no';
+                $resjson['msg'] = '获取失败';
+            }
+        } else {
+            $resjson['state'] = 'no';
+            $resjson['msg'] = '获取失败';
         }
         echo json_encode($resjson);
     }

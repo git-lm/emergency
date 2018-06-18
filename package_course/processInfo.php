@@ -11,8 +11,11 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-sm-3">
-
-                                <button data-toggle="button" class="right btn btn-primary btn-outline process-add" itemid="{pId}" type="button">新增流程事件索引</button>
+                                <?php
+                                if ($emer_users_info['type'] == 2 && $course_state == 1) {
+                                    ?>
+                                    <button data-toggle="button" class="right btn btn-primary btn-outline process-add" itemid="{pId}" type="button">新增流程事件索引</button>
+                                <?php } ?>
                             </div>
 
 
@@ -27,7 +30,11 @@
                                         <th>事件注入</th>
                                         <th>素材展示</th>
                                         <th>查看发言</th>
-                                        <th>操作</th>
+                                        <?php
+                                        if ($emer_users_info['type'] == 2 && $course_state == 1) {
+                                            ?>
+                                            <th>操作</th>
+                                        <?php } ?>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,9 +53,13 @@
                                                 <?php } ?>
                                             </td>
                                             <td><?php echo $list->material ?></td>
-                                            <td>
-                                                <button type="button" class="btn btn-default btn-sm process-edit" itemid="<?php echo $list->id ?>">修改</button>
-                                            </td>
+                                            <?php
+                                            if ($emer_users_info['type'] == 2 && $course_state == 1) {
+                                                ?>
+                                                <td>
+                                                    <button type="button" class="btn btn-default btn-sm process-edit" itemid="<?php echo $list->id ?>">修改</button>
+                                                </td>
+                                            <?php } ?>
                                         </tr>
                                     <?php } ?>
 

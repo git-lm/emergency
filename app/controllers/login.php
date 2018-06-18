@@ -53,6 +53,11 @@ class Login extends CI_Controller {
         echo json_encode($arr);
     }
 
+    public function loginout() {
+        $this->session->unset_userdata('emer_users_info');
+        header('Location:' . base_url() . 'login.html');
+    }
+
 }
 
 ?>
