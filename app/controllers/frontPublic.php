@@ -16,8 +16,8 @@ class frontPublic extends CI_Controller {
         parent::__construct();
         $this->load->model('model_cmf');
         $this->load->model('model_public');
+        $this->load->model('model_gateway');
         $this->load->model('uploads');
-        $this->load->library('wokerman/Events');
         $this->load->add_package_path(APPPATH . '../package_front', false);
         $this->now_time = date('Y-m-d H:i:s');
     }
@@ -82,11 +82,17 @@ class frontPublic extends CI_Controller {
                     if (!empty($course['state']) && $course['state'] == 2) {
                         $this->session->set_userdata('emergerncyGroupId', $group['id']);
                         //保存登录信息
-                        $item['from_g_id'] = $group['id'];
+                        $item['u_id'] = $group['id'];
                         $item['type'] = 2;
-                        $item['c_id'] = $course->id;
+                        $item['c_id'] = $course['id'];
                         $item['add_time'] = $this->now_time;
+                        $item['source'] = 2;
                         $this->model_public->setMessage($item);
+                        $message['type'] = 'gLogin';
+                        $message['g_name'] = $group['name'];
+                        $message['g_id'] = $group['id'];
+                        $msgString = json_encode($message);
+                        $this->model_gateway->sendToGroup($course['id'], $msgString);
                         //保存登录信息结束
                         $resjson['state'] = 'ok';
                         $resjson['msg'] = '登录成功';

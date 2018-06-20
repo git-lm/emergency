@@ -151,6 +151,18 @@ function onmessage(e)
         });
         //赋值给
         $('input[name="client_id"]').val(json.client_id);
+    }else if(json.type == 'gLogin'){
+        $('.lesson[itemid="'+json.g_id+'"]').css('color','red');
+        layer.open({
+            type:1,
+            title: '登录信息',
+            area: ['200px', '200px'],
+            time:15000,
+            shade:0,
+            anim: 2,
+            content :json.g_name,
+            offset: 'rb'
+        });
     }else if(json.type == 'end'){
       
         $('.student .dp').show();

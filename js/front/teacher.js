@@ -59,7 +59,7 @@ var beginCourse = function (){
             var groupHtml = '';
             //获取正在上课的小组
             for (var i = 0; i < group.length; i++) {
-                groupHtml += '<span class="'+ group[i].id+'">' + group[i].name + '</span>';
+                groupHtml += '<span itemid="'+ group[i].id+'">' + group[i].name + '</span>';
             }
             $('.lesson').html(groupHtml);
             var groupHtml = '<li itemid="0">所有人</li>';

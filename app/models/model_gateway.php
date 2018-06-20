@@ -10,7 +10,7 @@
  *
  * @author Administrator
  */
-include '/vendor/autoload.php';
+include dirname(__FILE__) . '/../controllers/vendor/autoload.php';
 
 use GatewayWorker\Lib\Gateway;
 
