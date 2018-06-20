@@ -9,7 +9,9 @@ $(function () {
             $('.check').html('请完整填写信息');
             return;
         }
-         var index = layer.load(1,{ shade: [0.5,'#000'] })
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'frontPublic/loginCheckTeacher', {
             'username': username,
             'password': password
@@ -25,13 +27,20 @@ $(function () {
             $('.check').html('请完整填写信息');
             return;
         }
-         var index = layer.load(1,{ shade: [0.5,'#000'] })
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'frontPublic/loginCheckGroup', {
             'username': username,
             'password': password
         }, function (data) {
-            layer.close(index); 
-            $.showMsg(data, base + 'student.html');
+            layer.close(index);
+            if(data.state = 'ok'){
+                $.showMsg(data, base + 'student.html');
+            }else{
+                layer.msg(data.msg);
+            }
+            
         }, 'json');
     })
     
@@ -39,7 +48,9 @@ $(function () {
         $('.showGroupChat li').removeClass('cur');
         $(this).addClass('cur');
         var g_id = $(this).attr('itemid');
-         var index = layer.load(1,{ shade: [0.5,'#000'] })
+        var index = layer.load(1,{
+            shade: [0.5,'#000']
+        })
         $.post(base + 'frontPublic/getGroupChats',{
             'g_id':g_id
         },function(data){
@@ -91,7 +102,9 @@ $(function () {
             var to_u_id =  0;
         }
         if(content !='' || content !=undefined){
-             var index = layer.load(1,{ shade: [0.5,'#000'] })
+            var index = layer.load(1,{
+                shade: [0.5,'#000']
+            })
             $.post(base +'metal/setMessages',{
                 'content':content,
                 'to_u_id':to_u_id,
@@ -128,7 +141,7 @@ function connect() {
 }
 function onmessage(e)
 {
-    console.log(e.data);
+  
     var json = eval('('+e.data+')');
     if(json.type == 'login'){
         //如果是登录则绑定uid
